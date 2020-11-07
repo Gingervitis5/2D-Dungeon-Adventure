@@ -19,6 +19,7 @@ public class StarGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         index = ++index % 10;
     }
 }

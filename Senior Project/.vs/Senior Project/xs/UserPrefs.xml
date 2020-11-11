@@ -1,16 +1,15 @@
-﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/StarGenerator.cs">
+﻿<Properties StartupConfiguration="{25123671-DE14-B5AC-A4A4-5268D0396AF6}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MainMenu.cs">
     <Files>
-      <File FileName="Assets/StarGenerator.cs" Line="22" Column="1" />
+      <File FileName="Assets/StarGenerator.cs" Line="10" Column="31" />
+      <File FileName="Assets/MainMenu.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Senior Project" expanded="True">
-            <Node name="Assembly-CSharp" expanded="True">
-              <Node name="Assets" expanded="True">
-                <Node name="StarGenerator.cs" selected="True" />
-              </Node>
+            <Node name="Assets" expanded="True">
+              <Node name="MainMenu.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -19,7 +18,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="2fa97b1f-0d9b-4d7b-9479-d2cf653fc83f" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="164315f7-d782-4aa2-ac54-160bd5d5b466" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

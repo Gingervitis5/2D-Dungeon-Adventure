@@ -12,7 +12,6 @@ public class DisplayPointer : MonoBehaviour, IPointerEnterHandler
         pointer.transform.position = new Vector3(pointer.transform.position.x,
                                                  this.transform.position.y,
                                                  pointer.transform.position.z);
-        Debug.Log("Highlighted");
     }
 
 }

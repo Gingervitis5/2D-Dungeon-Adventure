@@ -6,8 +6,7 @@ public class StarRandomizer : MonoBehaviour
 {
     public GameObject thisStar;
     public Animator animator;
-    int plusXBounds = 770, minusXBounds = 12;
-    int plusYBounds = 366, minusYBounds = 16;
+    int centerX = 394, centerY = 194;
 
 
     private void Update()
@@ -15,8 +14,8 @@ public class StarRandomizer : MonoBehaviour
         StartCoroutine(WaitForTime());
         if (IsAnimationFinished())
         {
-            thisStar.transform.position = new Vector3(Random.Range(minusXBounds, plusXBounds),
-                                                      Random.Range(minusYBounds, plusYBounds),
+            thisStar.transform.position = new Vector3(Random.Range((centerX+25) - (Screen.width/2), (centerX-25) + (Screen.width/2)),
+                                                      Random.Range((centerY+25) - (Screen.height/2), (centerY-25) + (Screen.height/2)),
                                                       0);
         }
     }

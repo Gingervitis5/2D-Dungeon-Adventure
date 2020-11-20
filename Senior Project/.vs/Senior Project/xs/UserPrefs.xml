@@ -1,9 +1,9 @@
 ﻿<Properties StartupConfiguration="{25123671-DE14-B5AC-A4A4-5268D0396AF6}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MainMenu.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/SettingsMenu.cs">
     <Files>
-      <File FileName="Assets/Scripts/MainMenu.cs" Line="21" Column="1" />
       <File FileName="Assets/Scripts/PlanetRotator.cs" Line="12" Column="79" />
       <File FileName="Assets/Scripts/StarRandomizer.cs" />
+      <File FileName="Assets/Scripts/SettingsMenu.cs" Line="8" Column="6" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -11,7 +11,7 @@
           <Node name="Senior Project" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="MainMenu.cs" selected="True" />
+                <Node name="SettingsMenu.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -21,7 +21,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="01cc91d2-f2f9-4a1d-9bb3-791a278f2edc" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="47c8eaa4-d230-4252-b249-98f24384e984" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

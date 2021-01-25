@@ -768,9 +768,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panel: {fileID: 297408596}
   originalHub: {fileID: 21300000, guid: 3f5fb48eaea914e8292e6bd8a5508e96, type: 3}
-  BM_Highlighted: {fileID: 21300000, guid: 660f97c7d0eb04bd6b3f83f10beca9fb, type: 3}
-  MB_Highlighted: {fileID: 21300000, guid: 48864a94b4b3e4cfcb6a20496a241530, type: 3}
-  ArmHighlighted: {fileID: 21300000, guid: 65a14839f01b5496aaccb0425e183181, type: 3}
+  BM_Highlighted: {fileID: 21300000, guid: e3681b5f6df134458a02eb638486b63a, type: 3}
+  MB_Highlighted: {fileID: 21300000, guid: 51773ff1958004aee8c2b13977bb7c3d, type: 3}
+  ArmHighlighted: {fileID: 21300000, guid: fbc6f4bc868e74045bbd43c8eeb4d63e, type: 3}
 --- !u!1 &2011686553
 GameObject:
   m_ObjectHideFlags: 0

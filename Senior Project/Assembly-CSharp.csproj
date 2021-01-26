@@ -98,7 +98,7 @@
     <Compile Include="Assets/Scripts/MainMenuScripts/PlanetRotator.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexShakeA.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/EnvMapAnimator.cs" />
-    <Compile Include="Assets/ControlPanel.cs" />
+    <Compile Include="Assets/Scripts/ControlPanel.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />

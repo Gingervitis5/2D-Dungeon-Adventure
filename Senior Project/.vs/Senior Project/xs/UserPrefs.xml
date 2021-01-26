@@ -1,25 +1,19 @@
 ﻿<Properties StartupConfiguration="{25123671-DE14-B5AC-A4A4-5268D0396AF6}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MoonMover.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UIHighlight.cs">
     <Files>
-      <File FileName="Assets/Scripts/MoonMover.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/UIHighlight.cs" Line="6" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Senior Project" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="Scripts" expanded="True">
-                <Node name="MoonMover.cs" selected="True" />
-              </Node>
-            </Node>
-          </Node>
+          <Node name="Senior Project" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="7581f211-87fc-4379-8355-1edf7122ab74" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="a98c310c-6a1b-4402-8b04-221f9f9040af" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

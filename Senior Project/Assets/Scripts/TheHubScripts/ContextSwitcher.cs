@@ -6,7 +6,7 @@ using UnityEngine;
 public class ContextSwitcher : MonoBehaviour
 {
     public GameObject FadeScreen, ControlPanel;
-    public Canvas TheHubCanvas, BlackMarketCanvas, MissionBriefingCanvas;
+    public Canvas TheHubCanvas, BlackMarketCanvas, MissionBriefingCanvas, ArmamentsCanvas;
 
     public void ButtonPressed()
     {

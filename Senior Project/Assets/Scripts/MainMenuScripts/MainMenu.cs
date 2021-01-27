@@ -8,10 +8,21 @@ public class MainMenu : MonoBehaviour
     public GameObject parentMainMenu;
     public GameObject settingsMenu;
     public GameObject creditsMenu;
+    public GameObject FadeScreen;
 
     public GameObject Credits { get => creditsMenu; set => creditsMenu = value; }
 
-    public void PlayGame() => SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    public void PlayGame()
+    {
+        FadeScreen.GetComponent<Animation>().Play("FadeAnim");
+        StartCoroutine(LoadNextScene());
+    }
+
+    private IEnumerator LoadNextScene()
+    {
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
 
     public void QuitGame() => Application.Quit();
 

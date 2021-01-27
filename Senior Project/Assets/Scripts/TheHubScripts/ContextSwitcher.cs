@@ -36,7 +36,7 @@ public class ContextSwitcher : MonoBehaviour
                 break;
             case "Armaments":
                 //Reset Vault Door
-                ArmamentsCanvas.transform.Find("Vault Door").position = new Vector3(789,386,0);
+                ArmamentsCanvas.transform.Find("Vault Door").position = new Vector3(798,386,0);
                 ControlPanel.GetComponent<ControlPanel>().EnableArmaments();
                 Animation[] ARM_Animations = ArmamentsCanvas.GetComponentsInChildren<Animation>();
                 for (int i = ARM_Animations.Length-1; i >= 0; i--)

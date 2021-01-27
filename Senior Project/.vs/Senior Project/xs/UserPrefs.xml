@@ -1,17 +1,19 @@
 ﻿<Properties StartupConfiguration="{25123671-DE14-B5AC-A4A4-5268D0396AF6}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MainMenuScripts/MainMenu.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/TheHubScripts/ContextSwitcher.cs">
     <Files>
-      <File FileName="Assets/Scripts/TheHubScripts/ContextSwitcher.cs" Line="39" Column="92" />
-      <File FileName="Assets/Scripts/MainMenuScripts/MainMenu.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/TheHubScripts/ContextSwitcher.cs" Line="39" Column="88" />
+      <File FileName="Assets/Scripts/MainMenuScripts/MainMenu.cs" Line="18" Column="41" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Senior Project" expanded="True">
-            <Node name="Assets" expanded="True" selected="True">
+            <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
                 <Node name="MainMenuScripts" expanded="True" />
-                <Node name="TheHubScripts" expanded="True" />
+                <Node name="TheHubScripts" expanded="True">
+                  <Node name="ContextSwitcher.cs" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>

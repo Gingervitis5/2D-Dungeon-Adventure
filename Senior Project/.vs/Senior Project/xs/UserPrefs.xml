@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{25123671-DE14-B5AC-A4A4-5268D0396AF6}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/TheHubScripts/ContextSwitcher.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/TheHubScripts/MissionContextSwitcher.cs">
     <Files>
-      <File FileName="Assets/Scripts/TheHubScripts/ContextSwitcher.cs" Line="39" Column="88" />
-      <File FileName="Assets/Scripts/MainMenuScripts/MainMenu.cs" Line="18" Column="41" />
+      <File FileName="Assets/Scripts/TheHubScripts/ContextSwitcher.cs" Line="29" Column="83" />
+      <File FileName="Assets/Scripts/TheHubScripts/MissionEnabler.cs" Line="13" Column="5" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -12,7 +12,7 @@
               <Node name="Scripts" expanded="True">
                 <Node name="MainMenuScripts" expanded="True" />
                 <Node name="TheHubScripts" expanded="True">
-                  <Node name="ContextSwitcher.cs" selected="True" />
+                  <Node name="MissionContextSwitcher.cs" selected="True" />
                 </Node>
               </Node>
             </Node>
@@ -23,7 +23,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="a5cc84cf-aebc-4574-ae87-7a6253cfba67" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="c6300886-37b1-4cf2-9521-e37236c6b349" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

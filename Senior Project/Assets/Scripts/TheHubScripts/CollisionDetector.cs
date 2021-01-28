@@ -8,6 +8,9 @@ public class CollisionDetector : MonoBehaviour
 {
     public GameObject panel;
     public Sprite originalHub, BM_Highlighted, MB_Highlighted, ArmHighlighted;
+    public Sprite LVLMarkerImage;
+    public GameObject[] LVLMarkers;
+                                 
     /* BM = Black Market
        MB = Mission Briefing
        Arm = Armaments
@@ -25,12 +28,15 @@ public class CollisionDetector : MonoBehaviour
 
         List<RaycastResult> results = new List<RaycastResult>();
         EventSystem.current.RaycastAll(pointerEventData, results);
-
+        /*for (int i = 0; i < results.Count; i++)
+        {
+            Debug.Log(results[i].gameObject.name + " " + i);
+        }*/
         for (int i = results.Count-1; i >= 0; i--)
         {
+            string objectName = results[i].gameObject.name;
             if (results[i].gameObject.GetComponent<UIHighlight>() != null)  //Found a highlightable element
             {
-                string objectName = results[i].gameObject.name;
                 switch (objectName)
                 {
                     case "Black Market":
@@ -43,12 +49,26 @@ public class CollisionDetector : MonoBehaviour
                         panel.GetComponent<Image>().sprite = MB_Highlighted;
                         break;
                     default:
+                        panel.GetComponent<Image>().sprite = originalHub;
                         break;
                 }
             }
-            else
+            else if (results[i].gameObject.GetComponent<MissionHighlight>() != null)
             {
-                panel.GetComponent<Image>().sprite = originalHub;
+                switch (objectName)
+                {
+                    case "LVL1Marker":
+                        results[i].gameObject.GetComponent<Image>().sprite = LVLMarkerImage;
+                        results[i].gameObject.GetComponent<Image>().color = new Color(255,255,255,255);
+                        break;
+                    case "MissionBriefingScreen":
+                        foreach (GameObject g in LVLMarkers)
+                        {
+                            g.GetComponent<Image>().sprite = null;
+                            g.GetComponent<Image>().color = new Color(255, 255, 255, 0);
+                        }
+                        break;
+                }
             }
         }
     }

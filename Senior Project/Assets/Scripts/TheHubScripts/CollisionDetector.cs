@@ -28,10 +28,10 @@ public class CollisionDetector : MonoBehaviour
 
         List<RaycastResult> results = new List<RaycastResult>();
         EventSystem.current.RaycastAll(pointerEventData, results);
-        /*for (int i = 0; i < results.Count; i++)
+        for (int i = 0; i < results.Count; i++)
         {
             Debug.Log(results[i].gameObject.name + " " + i);
-        }*/
+        }
         for (int i = results.Count-1; i >= 0; i--)
         {
             string objectName = results[i].gameObject.name;

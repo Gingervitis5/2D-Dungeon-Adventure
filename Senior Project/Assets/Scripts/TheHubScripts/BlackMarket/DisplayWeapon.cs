@@ -117,4 +117,28 @@ public class DisplayWeapon : MonoBehaviour
         TargetGraphic.sprite = DisplayGraphic;
         TargetGraphic.color = new Color(255, 255, 255, 255);
     }
+
+    public void DisplayDraksolv()
+    {
+        Name.text = "Name: Draksolv";
+        Damage.text = "Damage: 70-125";
+        Range.text = "Range: 70-125m";
+        Handling.text = "Handling: 20";
+        Type.text = "Type: Sniper Rifle";
+
+        TargetGraphic.sprite = DisplayGraphic;
+        TargetGraphic.color = new Color(255, 255, 255, 255);
+    }
+
+    public void DisplayStormfrontPS()
+    {
+        Name.text = "Name: Stormfront PS";
+        Damage.text = "Damage: 62-112";
+        Range.text = "Range: 62-112m";
+        Handling.text = "Handling: 15";
+        Type.text = "Type: Energy Sniper";
+
+        TargetGraphic.sprite = DisplayGraphic;
+        TargetGraphic.color = new Color(255, 255, 255, 255);
+    }
 }

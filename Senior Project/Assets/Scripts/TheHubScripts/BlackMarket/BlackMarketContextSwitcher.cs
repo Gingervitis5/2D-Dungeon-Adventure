@@ -5,24 +5,46 @@ using UnityEngine;
 
 public class BlackMarketContextSwitcher : MonoBehaviour
 {
-    public Sprite[] WindowPages;
-    // 0 == Consumables
-    // 1 == Weapons
-    // 2 == Salvage
+    public GameObject[] ItemIcons;
     public Image Window;
-
+    public Sprite Page;
+ 
     public void SwitchToConsumables()
     {
-        Window.sprite = WindowPages[0];
+        Window.sprite = Page;
+        ItemIcons[0].SetActive(true);
+        foreach(GameObject g in ItemIcons)
+        {
+            if (!g.transform.name.Equals(ItemIcons[0].name))
+            {
+                g.SetActive(false);
+            }
+        }
     }
 
     public void SwitchToWeapons()
     {
-        Window.sprite = WindowPages[1];
+        Window.sprite = Page;
+        ItemIcons[1].SetActive(true);
+        foreach (GameObject g in ItemIcons)
+        {
+            if (!g.transform.name.Equals(ItemIcons[1].name))
+            {
+                g.SetActive(false);
+            }
+        }
     }
 
     public void SwitchToSalvage()
     {
-        Window.sprite = WindowPages[2];
+        Window.sprite = Page;
+        ItemIcons[2].SetActive(true);
+        foreach (GameObject g in ItemIcons)
+        {
+            if (!g.transform.name.Equals(ItemIcons[2].name))
+            {
+                g.SetActive(false);
+            }
+        }
     }
 }

@@ -45,6 +45,15 @@ public class PurchaseWeapon : MonoBehaviour
             case "48b Anti-Personnel Rifle":
                 Purchase48bAntiPersonnelRifle();
                 break;
+            case "Draksolv":
+                PurchaseDraksolv();
+                break;
+            case "Stormfront PS":
+                PurchaseStormfrontPS();
+                break;
+            default:
+                Debug.Log("Nothing was bought");
+                break;
         }
     }
     //Rifles
@@ -120,5 +129,21 @@ public class PurchaseWeapon : MonoBehaviour
         New48b.SetStats(120, 90, 1, 50, 70, 40);
         InventoryMaster.GetComponent<InventoryMasterScript>().AddItem(New48b);
         Debug.Log("Successfully purchased 48b Anti-Personnel Rifle");
+    }
+
+    public void PurchaseDraksolv()
+    {
+        Weapon NewDraksolv = itemFactory.CreateNewWeapon("Draksolv");
+        NewDraksolv.SetStats(125, 70, 1, 40, 50, 20);
+        InventoryMaster.GetComponent<InventoryMasterScript>().AddItem(NewDraksolv);
+        Debug.Log("Successfully purchased Draksolv");
+    }
+
+    public void PurchaseStormfrontPS()
+    {
+        Weapon NewStormfrontPS = itemFactory.CreateNewWeapon("Stormfront PS");
+        NewStormfrontPS.SetStats(112, 62, 1, 50, 50, 15);
+        InventoryMaster.GetComponent<InventoryMasterScript>().AddItem(NewStormfrontPS);
+        Debug.Log("Successfully purchased Stormfront PS");
     }
 }

@@ -56,14 +56,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/Scripts/TheHubScripts/ContextSwitcher.cs" />
+    <Compile Include="Assets/Scripts/TheHubScripts/BlackMarket/DisplayWeapon.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_PhoneNumberValidator.cs" />
     <Compile Include="Assets/Scripts/MainMenuScripts/SettingsMenu.cs" />
     <Compile Include="Assets/Scripts/TheHubScripts/DisableOnStart.cs" />
-    <Compile Include="Assets/Scripts/Classes/Consumable.cs" />
     <Compile Include="Assets/Scripts/TheHubScripts/BlackMarket/ResetBlackMarketScreen.cs" />
     <Compile Include="Assets/Scripts/TheHubScripts/UIHighlight.cs" />
-    <Compile Include="Assets/Scripts/TheHubScripts/MarkerSpinner.cs" />
-    <Compile Include="Assets/Scripts/Classes/ItemFactory.cs" />
+    <Compile Include="Assets/Scripts/Classes/Combatants/Combatant.cs" />
+    <Compile Include="Assets/Scripts/TheHubScripts/BlackMarket/WeaponTabSwitcher.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark03.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/WarpTextExample.cs" />
     <Compile Include="Assets/Scripts/MainMenuScripts/DisplayPointer.cs" />
@@ -71,9 +71,14 @@
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextEventHandler.cs" />
     <Compile Include="Assets/Scripts/MainMenuScripts/StarRandomizer.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01.cs" />
+    <Compile Include="Assets/Scripts/Classes/Items/Consumable.cs" />
+    <Compile Include="Assets/Scripts/Classes/Combatants/Ally.cs" />
     <Compile Include="Assets/Scripts/MainMenuScripts/MainMenu.cs" />
+    <Compile Include="Assets/Scripts/TheHubScripts/BlackMarket/PurchaseWeapon.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/CameraController.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexJitter.cs" />
+    <Compile Include="Assets/Scripts/Classes/Items/Weapon.cs" />
+    <Compile Include="Assets/Scripts/Classes/Items/ItemFactory.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ChatController.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_ExampleScript_01.cs" />
     <Compile Include="Assets/Scripts/TheHubScripts/BlackMarket/PurchaseItem.cs" />
@@ -83,7 +88,6 @@
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextConsoleSimulator.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ShaderPropAnimator.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextSelector_A.cs" />
-    <Compile Include="Assets/Scripts/Classes/Item.cs" />
     <Compile Include="Assets/Scripts/TheHubScripts/MissionBriefing/MissionContextSwitcher.cs" />
     <Compile Include="Assets/Scripts/TheHubScripts/MissionBriefing/ResetMissionScreen.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/SimpleScript.cs" />
@@ -109,12 +113,18 @@
     <Compile Include="Assets/Scripts/MainMenuScripts/PlanetRotator.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexShakeA.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/EnvMapAnimator.cs" />
+    <Compile Include="Assets/Scripts/Classes/Items/Item.cs" />
     <Compile Include="Assets/Scripts/TheHubScripts/ControlPanel.cs" />
+    <Compile Include="Assets/Scripts/Classes/Combatants/Wildlander.cs" />
     <Compile Include="Assets/Scripts/InventoryMasterScript.cs" />
-    <Compile Include="Assets/Scripts/TheHubScripts/BlackMarket/DisplayWeapon.cs" />
-    <Compile Include="Assets/Scripts/Classes/Weapon.cs" />
-    <Compile Include="Assets/Scripts/TheHubScripts/BlackMarket/PurchaseWeapon.cs" />
-    <Compile Include="Assets/Scripts/TheHubScripts/BlackMarket/WeaponTabSwitcher.cs" />
+    <Compile Include="Assets/Scripts/PartyMasterScript.cs" />
+    <Compile Include="Assets/Scripts/TheHubScripts/Armaments/RecruitmentRandomizer.cs" />
+    <Compile Include="Assets/Scripts/TheHubScripts/MissionBriefing/MarkerSpinner.cs" />
+    <Compile Include="Assets/Scripts/TheHubScripts/Armaments/GenerateCharacterInfo.cs" />
+    <Compile Include="Assets/Scripts/Classes/Combatants/CharacterFactory.cs" />
+    <Compile Include="Assets/Scripts/Classes/Combatants/Technician.cs" />
+    <Compile Include="Assets/Scripts/Classes/Combatants/Scholar.cs" />
+    <Compile Include="Assets/Scripts/TheHubScripts/Armaments/RecruitCharacter.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />

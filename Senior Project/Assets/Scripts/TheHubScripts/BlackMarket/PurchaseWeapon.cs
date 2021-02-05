@@ -51,6 +51,9 @@ public class PurchaseWeapon : MonoBehaviour
             case "Stormfront PS":
                 PurchaseStormfrontPS();
                 break;
+            default:
+                Debug.Log("Nothing was bought");
+                break;
         }
     }
     //Rifles

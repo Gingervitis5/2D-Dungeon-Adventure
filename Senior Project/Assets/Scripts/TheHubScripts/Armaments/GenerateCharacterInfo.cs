@@ -14,6 +14,11 @@ public class GenerateCharacterInfo : MonoBehaviour
     private CharacterFactory characterFactory = new CharacterFactory();
     private GameObject RecruitmentPage;
 
+    public void SetGeneratedCharacter(Ally character)
+    {
+        generatedCharacter = character;
+    }
+
     private void Awake()
     {
         RecruitmentPage = GameObject.FindGameObjectWithTag("Recruitment Page");
@@ -46,6 +51,7 @@ public class GenerateCharacterInfo : MonoBehaviour
             Glamour.text = "Glamour: " + randGlamour;
 
             generatedCharacter = characterFactory.CreateNewWildlander(randBrawn, randAgility, randLuck, randReason, randWit, randGlamour);
+            generatedCharacter.CharacterImage = DisplayGraphic;
         }
         else
         {
@@ -83,6 +89,7 @@ public class GenerateCharacterInfo : MonoBehaviour
             Glamour.text = "Glamour: " + randGlamour;
 
             generatedCharacter = characterFactory.CreateNewTechnician(randBrawn, randAgility, randLuck, randReason, randWit, randGlamour);
+            generatedCharacter.CharacterImage = DisplayGraphic;
         }
         else
         {
@@ -119,6 +126,7 @@ public class GenerateCharacterInfo : MonoBehaviour
             Glamour.text = "Glamour: " + randGlamour;
 
             generatedCharacter = characterFactory.CreateNewScholar(randBrawn, randAgility, randLuck, randReason, randWit, randGlamour);
+            generatedCharacter.CharacterImage = DisplayGraphic;
         }
         else
         {

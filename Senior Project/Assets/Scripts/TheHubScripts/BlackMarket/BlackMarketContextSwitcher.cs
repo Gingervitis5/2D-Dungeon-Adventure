@@ -6,12 +6,12 @@ using UnityEngine;
 public class BlackMarketContextSwitcher : MonoBehaviour
 {
     public GameObject[] ItemIcons;
-    public Image Window;
+    public Image WindowPage;
     public Sprite Page;
  
     public void SwitchToConsumables()
     {
-        Window.sprite = Page;
+        WindowPage.sprite = Page;
         ItemIcons[0].SetActive(true);
         foreach(GameObject g in ItemIcons)
         {
@@ -24,7 +24,7 @@ public class BlackMarketContextSwitcher : MonoBehaviour
 
     public void SwitchToWeapons()
     {
-        Window.sprite = Page;
+        WindowPage.sprite = Page;
         ItemIcons[1].SetActive(true);
         foreach (GameObject g in ItemIcons)
         {
@@ -37,7 +37,7 @@ public class BlackMarketContextSwitcher : MonoBehaviour
 
     public void SwitchToSalvage()
     {
-        Window.sprite = Page;
+        WindowPage.sprite = Page;
         ItemIcons[2].SetActive(true);
         foreach (GameObject g in ItemIcons)
         {

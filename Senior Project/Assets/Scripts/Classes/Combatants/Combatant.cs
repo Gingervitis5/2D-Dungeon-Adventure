@@ -7,5 +7,6 @@ public abstract class Combatant : ScriptableObject
     protected double Aim, CritChance, CritMultiplier, Dodge;
     protected Weapon weapon;
     public string CharacterName;
+    public Sprite CharacterImage;
 
 }

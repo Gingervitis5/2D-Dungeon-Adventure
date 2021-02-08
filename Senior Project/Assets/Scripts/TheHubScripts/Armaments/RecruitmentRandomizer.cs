@@ -6,11 +6,20 @@ public class RecruitmentRandomizer : MonoBehaviour
 {
     public GameObject ListContent;
     public GameObject WildlanderPrefab, TechnicianPrefab, ScholarPrefab;
+    private List<GameObject> Recruits = new List<GameObject>();
     private bool HasRandomized = false;
 
     public void SetRandomized(bool r)
     {
         HasRandomized = r;
+    }
+
+    public void DisplayRecruits()
+    {
+        foreach(GameObject recruit in Recruits)
+        {
+            recruit.transform.SetParent(ListContent.transform);
+        }
     }
 
     public void RandomizeRecruits()
@@ -26,16 +35,20 @@ public class RecruitmentRandomizer : MonoBehaviour
                 case 1: //Wildlander
                     NewRecruitObject = GameObject.Instantiate(WildlanderPrefab);
                     NewRecruitObject.transform.SetParent(ListContent.transform);
+                    Recruits.Add(NewRecruitObject);
                     break;
                 case 2: //Technician
                     NewRecruitObject = GameObject.Instantiate(TechnicianPrefab);
                     NewRecruitObject.transform.SetParent(ListContent.transform);
+                    Recruits.Add(NewRecruitObject);
                     break;
                 case 3: //Scholar
                     NewRecruitObject = GameObject.Instantiate(ScholarPrefab);
                     NewRecruitObject.transform.SetParent(ListContent.transform);
+                    Recruits.Add(NewRecruitObject);
                     break;
             }
+            
         }
     }
 }

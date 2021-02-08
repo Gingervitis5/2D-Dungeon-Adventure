@@ -8,13 +8,14 @@ public class DisplayCharacterInfo : MonoBehaviour
     private Ally character;
     private Image TargetGraphic, WeaponTargetGraphic;
     public Sprite DisplayGraphic;
-    private TextMeshProUGUI Brawn, Agility, Luck, Reason, Wit, Glamour;
+    private TextMeshProUGUI Level, Brawn, Agility, Luck, Reason, Wit, Glamour;
     private TextMeshProUGUI WeaponName, Damage, Handling, Type;
     private GameObject PartyMemberPage;
 
     public void Awake()
     {
         PartyMemberPage = GameObject.FindGameObjectWithTag("Party Member Page");
+        Level = PartyMemberPage.transform.Find("Level").GetComponent<TextMeshProUGUI>();
         Brawn = PartyMemberPage.transform.Find("Brawn").GetComponent<TextMeshProUGUI>();
         Agility = PartyMemberPage.transform.Find("Agility").GetComponent<TextMeshProUGUI>();
         Luck = PartyMemberPage.transform.Find("Luck").GetComponent<TextMeshProUGUI>();
@@ -38,6 +39,7 @@ public class DisplayCharacterInfo : MonoBehaviour
 
     public void DisplayCharacter()
     {
+        Level.text = "Level: " + character.GetLevel();
         Brawn.text = "Brawn: " + character.GetBrawn();
         Agility.text = "Agility: " + character.GetAgility();
         Luck.text = "Luck: " + character.GetLuck();

@@ -27,6 +27,7 @@ public class RecruitCharacter : MonoBehaviour
             CharacterToRecruit.GetWeapon().SetStats(14, 8, 6, 5, 10, 25);
             CharacterToRecruit.GetWeapon().SetWeaponType("Assault Rifle");
             CharacterToRecruit.GetWeapon().SetItemImage(BCRSI);
+            CharacterToRecruit.SetLevel(1);
             PartyMaster.GetComponent<PartyMasterScript>().RecruitCharacter(CharacterToRecruit);
             GameObject.Destroy(CharacterIcon);
             CharacterToRecruit = null;

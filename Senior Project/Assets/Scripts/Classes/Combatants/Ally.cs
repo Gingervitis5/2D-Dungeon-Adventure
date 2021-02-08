@@ -11,6 +11,7 @@ public abstract class Ally : Combatant
     public int GetWit() { return this.Wit; }
     public int GetGlamour() { return this.Glamour; }
     public Weapon GetWeapon() { return this.weapon; }
+    public int GetLevel() { return this.Level; }
 
     public void SetBrawn(int brawn) { this.Brawn = brawn; }
     public void SetAgility(int agility) { this.Agility = agility; }
@@ -19,4 +20,5 @@ public abstract class Ally : Combatant
     public void SetWit(int wit) { this.Wit = wit; }
     public void SetGlamour(int glamour) { this.Glamour = glamour; }
     public void SetWeapon(Weapon newWeapon) { this.weapon = newWeapon; }
+    public void SetLevel(int level) { this.Level = level; }
 }

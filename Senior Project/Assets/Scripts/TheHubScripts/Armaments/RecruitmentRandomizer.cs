@@ -5,7 +5,7 @@ using UnityEngine;
 public class RecruitmentRandomizer : MonoBehaviour
 {
     public GameObject ListContent;
-    public GameObject WildlanderPrefab, TechnicianPrefab, ScholarPrefab;
+    public GameObject[] Prefabs;
     private List<GameObject> Recruits = new List<GameObject>();
     private bool HasRandomized = false;
 
@@ -28,22 +28,27 @@ public class RecruitmentRandomizer : MonoBehaviour
         int RecruitType;
         for (int i = 1; i <= NumRecruits && !HasRandomized; i++)
         {
-            RecruitType = Random.Range(1, 4);
+            RecruitType = Random.Range(1, 5);
             GameObject NewRecruitObject;
             switch (RecruitType)
             {
                 case 1: //Wildlander
-                    NewRecruitObject = GameObject.Instantiate(WildlanderPrefab);
+                    NewRecruitObject = GameObject.Instantiate(Prefabs[0]);
                     NewRecruitObject.transform.SetParent(ListContent.transform);
                     Recruits.Add(NewRecruitObject);
                     break;
                 case 2: //Technician
-                    NewRecruitObject = GameObject.Instantiate(TechnicianPrefab);
+                    NewRecruitObject = GameObject.Instantiate(Prefabs[1]);
                     NewRecruitObject.transform.SetParent(ListContent.transform);
                     Recruits.Add(NewRecruitObject);
                     break;
                 case 3: //Scholar
-                    NewRecruitObject = GameObject.Instantiate(ScholarPrefab);
+                    NewRecruitObject = GameObject.Instantiate(Prefabs[2]);
+                    NewRecruitObject.transform.SetParent(ListContent.transform);
+                    Recruits.Add(NewRecruitObject);
+                    break;
+                case 4: //Psionic
+                    NewRecruitObject = GameObject.Instantiate(Prefabs[3]);
                     NewRecruitObject.transform.SetParent(ListContent.transform);
                     Recruits.Add(NewRecruitObject);
                     break;

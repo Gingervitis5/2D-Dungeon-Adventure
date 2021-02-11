@@ -36,12 +36,12 @@ public class GenerateCharacterInfo : MonoBehaviour
     {
         if (generatedCharacter == null)
         {
-            int randBrawn = Random.Range(12, 21),
-            randAgility = Random.Range(12, 17),
-            randLuck = Random.Range(0, 21),
-            randReason = Random.Range(3, 9),
-            randWit = Random.Range(5, 13),
-            randGlamour = Random.Range(8, 12);
+            int randBrawn = Random.Range(14, 21),
+            randAgility = Random.Range(14, 19),
+            randLuck = Random.Range(2, 21),
+            randReason = Random.Range(8, 13),
+            randWit = Random.Range(8, 15),
+            randGlamour = Random.Range(8, 15);
 
             Brawn.text = "Brawn: " + randBrawn;
             Agility.text = "Agility: " + randAgility;
@@ -52,6 +52,7 @@ public class GenerateCharacterInfo : MonoBehaviour
 
             generatedCharacter = characterFactory.CreateNewWildlander(randBrawn, randAgility, randLuck, randReason, randWit, randGlamour);
             generatedCharacter.CharacterImage = DisplayGraphic;
+            generatedCharacter.SetClass("Wildlander");
         }
         else
         {
@@ -67,19 +68,18 @@ public class GenerateCharacterInfo : MonoBehaviour
         TargetGraphic.color = new Color(255, 255, 255, 255);
 
         RecruitCharacter.SetCharacter(generatedCharacter, this.gameObject);
-;
     }
 
     public void DisplayTechnician()
     {
         if (generatedCharacter == null)
         {
-            int randBrawn = Random.Range(5, 11),
-            randAgility = Random.Range(8, 13),
+            int randBrawn = Random.Range(8, 13),
+            randAgility = Random.Range(10, 15),
             randLuck = Random.Range(0, 21),
-            randReason = Random.Range(11, 17),
+            randReason = Random.Range(12, 19),
             randWit = Random.Range(14, 21),
-            randGlamour = Random.Range(8, 13);
+            randGlamour = Random.Range(10, 15);
 
             Brawn.text = "Brawn: " + randBrawn;
             Agility.text = "Agility: " + randAgility;
@@ -90,6 +90,7 @@ public class GenerateCharacterInfo : MonoBehaviour
 
             generatedCharacter = characterFactory.CreateNewTechnician(randBrawn, randAgility, randLuck, randReason, randWit, randGlamour);
             generatedCharacter.CharacterImage = DisplayGraphic;
+            generatedCharacter.SetClass("Technician");
         }
         else
         {
@@ -111,12 +112,12 @@ public class GenerateCharacterInfo : MonoBehaviour
     {
         if (generatedCharacter == null)
         {
-            int randBrawn = Random.Range(5, 11),
+            int randBrawn = Random.Range(8, 15),
             randAgility = Random.Range(8, 13),
-            randLuck = Random.Range(0, 21),
-            randReason = Random.Range(14, 21),
+            randLuck = Random.Range(2, 21),
+            randReason = Random.Range(12, 21),
             randWit = Random.Range(14, 21),
-            randGlamour = Random.Range(9, 14);
+            randGlamour = Random.Range(12, 17);
 
             Brawn.text = "Brawn: " + randBrawn;
             Agility.text = "Agility: " + randAgility;
@@ -127,6 +128,7 @@ public class GenerateCharacterInfo : MonoBehaviour
 
             generatedCharacter = characterFactory.CreateNewScholar(randBrawn, randAgility, randLuck, randReason, randWit, randGlamour);
             generatedCharacter.CharacterImage = DisplayGraphic;
+            generatedCharacter.SetClass("Scholar");
         }
         else
         {
@@ -142,5 +144,44 @@ public class GenerateCharacterInfo : MonoBehaviour
         TargetGraphic.color = new Color(255, 255, 255, 255);
 
         RecruitCharacter.SetCharacter(generatedCharacter, this.gameObject);
+    }
+
+    public void DisplayPsionic()
+    {
+        if (generatedCharacter == null)
+        {
+            int randBrawn = Random.Range(10, 16),
+            randAgility = Random.Range(10, 13),
+            randLuck = Random.Range(0, 21),
+            randReason = Random.Range(12, 17),
+            randWit = Random.Range(10, 17),
+            randGlamour = Random.Range(12, 19);
+
+            Brawn.text = "Brawn: " + randBrawn;
+            Agility.text = "Agility: " + randAgility;
+            Luck.text = "Luck: " + randLuck;
+            Reason.text = "Reason: " + randReason;
+            Wit.text = "Wit: " + randWit;
+            Glamour.text = "Glamour: " + randGlamour;
+
+            generatedCharacter = characterFactory.CreateNewPsionic(randBrawn, randAgility, randLuck, randReason, randWit, randGlamour);
+            generatedCharacter.CharacterImage = DisplayGraphic;
+            generatedCharacter.SetClass("Psionic");
+        }
+        else
+        {
+            Brawn.text = "Brawn: " + generatedCharacter.GetBrawn();
+            Agility.text = "Agility: " + generatedCharacter.GetAgility();
+            Luck.text = "Luck: " + generatedCharacter.GetLuck();
+            Reason.text = "Reason: " + generatedCharacter.GetReason();
+            Wit.text = "Wit: " + generatedCharacter.GetWit();
+            Glamour.text = "Glamour: " + generatedCharacter.GetGlamour();
+        }
+        Class.text = "Class: Psionic";
+        TargetGraphic.sprite = DisplayGraphic;
+        TargetGraphic.color = new Color(255, 255, 255, 255);
+
+        RecruitCharacter.SetCharacter(generatedCharacter, this.gameObject);
+        ;
     }
 }

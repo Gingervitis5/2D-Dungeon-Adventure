@@ -44,5 +44,18 @@ namespace AssemblyCSharp.Assets.Scripts.Classes
             NewScholar.CharacterName = "Scholar";
             return NewScholar;
         }
+
+        public Psionic CreateNewPsionic(int brawn, int agility, int luck, int reason, int wit, int glamour)
+        {
+            Psionic NewScholar = ScriptableObject.CreateInstance<Psionic>();
+            NewScholar.SetBrawn(brawn);
+            NewScholar.SetAgility(agility);
+            NewScholar.SetLuck(luck);
+            NewScholar.SetReason(reason);
+            NewScholar.SetWit(wit);
+            NewScholar.SetGlamour(glamour);
+            NewScholar.CharacterName = "Psionic";
+            return NewScholar;
+        }
     }
 }

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Recruitment Page
   - Party Member Page
+  - Party Select
   layers:
   - Default
   - TransparentFX

@@ -6,12 +6,20 @@ public class RecruitmentRandomizer : MonoBehaviour
 {
     public GameObject ListContent;
     public GameObject[] Prefabs;
-    private List<GameObject> Recruits = new List<GameObject>();
+    private static List<GameObject> Recruits = new List<GameObject>();
     private bool HasRandomized = false;
 
     public void SetRandomized(bool r)
     {
         HasRandomized = r;
+    }
+
+    public static void RemoveRecruit(GameObject objectToRemove)
+    {
+        if (Recruits.Contains(objectToRemove))
+        {
+            Recruits.Remove(objectToRemove);
+        }
     }
 
     public void DisplayRecruits()

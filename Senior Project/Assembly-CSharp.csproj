@@ -82,6 +82,7 @@
     <Compile Include="Assets/Scripts/TheHubScripts/Armaments/RecruitmentRandomizer.cs" />
     <Compile Include="Assets/Scripts/MainMenuScripts/MainMenu.cs" />
     <Compile Include="Assets/Scripts/TheHubScripts/BlackMarket/PurchaseWeapon.cs" />
+    <Compile Include="Assets/Scripts/Classes/Combatants/Psionic.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/CameraController.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexJitter.cs" />
     <Compile Include="Assets/Scripts/Classes/Items/Weapon.cs" />
@@ -129,7 +130,9 @@
     <Compile Include="Assets/Scripts/TheHubScripts/Armaments/GenerateCharacterInfo.cs" />
     <Compile Include="Assets/Scripts/Classes/Combatants/Wildlander.cs" />
     <Compile Include="Assets/Scripts/InventoryMasterScript.cs" />
-    <Compile Include="Assets/Scripts/Classes/Combatants/Psionic.cs" />
+    <Compile Include="Assets/Scripts/TheHubScripts/MissionBriefing/DragDrop.cs" />
+    <Compile Include="Assets/Scripts/TheHubScripts/MissionBriefing/DropBox.cs" />
+    <Compile Include="Assets/Scripts/TheHubScripts/Armaments/ExitArmaments.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />

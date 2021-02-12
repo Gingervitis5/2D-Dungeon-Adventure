@@ -145,3 +145,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DisplayGraphic: {fileID: 21300000, guid: f5b8ef5201e7e413ca3c5b55871ed28f, type: 3}
+  characterToGenerate: 2

@@ -10,16 +10,20 @@ public class DropBox : MonoBehaviour, IDropHandler
 
     public void OnDrop(PointerEventData eventData)
     {
-        Debug.Log("DropBox OnDrop");
 
         if (eventData.pointerDrag != null)
         {
-            if (slottedCharacter != null) { slottedCharacter.transform.SetParent(ListContent.transform); }
+            if (slottedCharacter != null && slottedCharacter != eventData.pointerDrag) { slottedCharacter.transform.SetParent(ListContent.transform); }
             eventData.pointerDrag.GetComponent<RectTransform>().SetParent(this.transform);
             eventData.pointerDrag.GetComponent<RectTransform>().anchorMin = new Vector2(0.5f, 0.5f);
             eventData.pointerDrag.GetComponent<RectTransform>().anchorMax = new Vector2(0.5f, 0.5f);
             eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
             slottedCharacter = eventData.pointerDrag;
         }
+    }
+
+    public void SetSlottedCharacter(GameObject character)
+    {
+        slottedCharacter = character;
     }
 }

@@ -79,13 +79,13 @@
     <Compile Include="Assets/Scripts/Classes/Combatants/CharacterFactory.cs" />
     <Compile Include="Assets/Scripts/Classes/Items/Consumable.cs" />
     <Compile Include="Assets/Scripts/Classes/Combatants/Ally.cs" />
-    <Compile Include="Assets/Scripts/TheHubScripts/Armaments/RecruitmentRandomizer.cs" />
     <Compile Include="Assets/Scripts/MainMenuScripts/MainMenu.cs" />
     <Compile Include="Assets/Scripts/TheHubScripts/BlackMarket/PurchaseWeapon.cs" />
     <Compile Include="Assets/Scripts/Classes/Combatants/Psionic.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/CameraController.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexJitter.cs" />
     <Compile Include="Assets/Scripts/Classes/Items/Weapon.cs" />
+    <Compile Include="Assets/Scripts/TheHubScripts/MissionBriefing/DropBox.cs" />
     <Compile Include="Assets/Scripts/Classes/Items/ItemFactory.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ChatController.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_ExampleScript_01.cs" />
@@ -101,6 +101,7 @@
     <Compile Include="Assets/Scripts/TheHubScripts/MissionBriefing/ResetMissionScreen.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/SimpleScript.cs" />
     <Compile Include="Assets/Scripts/Classes/Combatants/Technician.cs" />
+    <Compile Include="Assets/Scripts/TheHubScripts/MissionBriefing/DragDrop.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextInfoDebugTool.cs" />
     <Compile Include="Assets/Scripts/MainMenuScripts/MoonMover.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_FrameRateCounter.cs" />
@@ -120,6 +121,7 @@
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexZoom.cs" />
     <Compile Include="Assets/Scripts/TheHubScripts/BlackMarket/BlackMarketContextSwitcher.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMPro_InstructionOverlay.cs" />
+    <Compile Include="Assets/Scripts/TheHubScripts/Armaments/ExitArmaments.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TeleType.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextMeshProFloatingText.cs" />
     <Compile Include="Assets/Scripts/MainMenuScripts/PlanetRotator.cs" />
@@ -130,9 +132,7 @@
     <Compile Include="Assets/Scripts/TheHubScripts/Armaments/GenerateCharacterInfo.cs" />
     <Compile Include="Assets/Scripts/Classes/Combatants/Wildlander.cs" />
     <Compile Include="Assets/Scripts/InventoryMasterScript.cs" />
-    <Compile Include="Assets/Scripts/TheHubScripts/MissionBriefing/DragDrop.cs" />
-    <Compile Include="Assets/Scripts/TheHubScripts/MissionBriefing/DropBox.cs" />
-    <Compile Include="Assets/Scripts/TheHubScripts/Armaments/ExitArmaments.cs" />
+    <Compile Include="Assets/Scripts/TheHubScripts/Armaments/RecruitmentDisplayer.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />

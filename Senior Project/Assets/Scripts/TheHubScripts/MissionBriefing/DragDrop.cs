@@ -9,6 +9,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
     private GameObject ListContent;
+    private GameObject slot;
 
     private void Awake()
     {
@@ -16,6 +17,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
         ListContent = GameObject.Find("PartyContent");
         canvas = GameObject.Find("MissionBriefingCanvas").GetComponent<Canvas>();
         canvasGroup = GetComponent<CanvasGroup>();
+        slot = null;
         Debug.Log("List: " + ListContent.name + " Canvas: " + canvas.name);
     }
 
@@ -32,6 +34,26 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
 
     public void OnEndDrag(PointerEventData eventData)
     {
+        PointerEventData pointerEventData = new PointerEventData(EventSystem.current);
+        pointerEventData.position = Input.mousePosition;
+        List<RaycastResult> results = new List<RaycastResult>();
+        EventSystem.current.RaycastAll(pointerEventData, results);
+        bool hit = false;
+        foreach(RaycastResult r in results)
+        {
+            if (r.gameObject.name.Contains("DropBox")) 
+            {
+                if (slot != null) {
+                    Debug.Log("Leaving " + slot.gameObject.name);
+                    slot.GetComponent<DropBox>().SetSlottedCharacter(null); //Reset the current slot's character
+                }
+                Debug.Log("Entering " + r.gameObject.name);
+                slot = r.gameObject;    //Set the new slot
+                slot.gameObject.GetComponent<DropBox>().SetSlottedCharacter(this.gameObject);   //Set the current slot's character
+                hit = true;
+            }
+        }
+        if (!hit) { this.gameObject.transform.SetParent(ListContent.transform); }
         canvasGroup.blocksRaycasts = true;
     }
 
@@ -41,5 +63,6 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
 
     public void OnDrop(PointerEventData eventData)
     {
+        
     }
 }

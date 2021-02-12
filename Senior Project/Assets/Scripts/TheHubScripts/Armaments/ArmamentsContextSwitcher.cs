@@ -32,7 +32,7 @@ public class ArmamentsContextSwitcher : MonoBehaviour
                 Pages[1].SetActive(false);
                 DestroyChildren();
                 WindowPage.sprite = Graphics[0];
-                RecruitmentPage.GetComponent<RecruitmentRandomizer>().DisplayRecruits();
+                RecruitmentPage.GetComponent<RecruitmentDisplayer>().DisplayRecruits();
                 break;
         }
     }
@@ -45,6 +45,7 @@ public class ArmamentsContextSwitcher : MonoBehaviour
             if (!child.name.Equals("RecruitContent"))
             {
                 child.SetParent(null);
+                GameObject.Destroy(child.gameObject);
             }
         } 
     }

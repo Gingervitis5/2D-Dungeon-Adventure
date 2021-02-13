@@ -5,20 +5,21 @@ using UnityEngine;
 public class PartyMasterScript : MonoBehaviour
 {
     private List<Ally> Characters = new List<Ally>();
-    public GameObject ListContent;
-    public GameObject WildlanderPrefab, TechnicianPrefab, ScholarPrefab;
+    public GameObject RecruitListContent, PartyListContent;
+    public GameObject[] RecruitPrefabs;
+    public GameObject[] DraggablePrefabs;
 
     public void RecruitCharacter(Ally recruit)
     {
         Characters.Add(recruit);
-        Debug.Log("Recruited: " + recruit.CharacterName);
+        //Debug.Log("Recruited: " + recruit.CharacterName);
         /*foreach(Ally a in Characters)
         {
             Debug.Log(a.CharacterName);
         }*/
     }
 
-    public void DisplayPartyMembers()
+    public void DisplayRecruitedMembers()
     {
         foreach(Ally a in Characters)
         {
@@ -27,19 +28,59 @@ public class PartyMasterScript : MonoBehaviour
             {
                
                 case "Wildlander":
-                    prefab = GameObject.Instantiate(WildlanderPrefab);
+                    prefab = GameObject.Instantiate(RecruitPrefabs[0]);
                     prefab.GetComponent<DisplayCharacterInfo>().SetCharacter(a);
-                    prefab.transform.SetParent(ListContent.transform);
+                    prefab.transform.SetParent(RecruitListContent.transform);
                     break;
                 case "Technician":
-                    prefab = GameObject.Instantiate(TechnicianPrefab);
+                    prefab = GameObject.Instantiate(RecruitPrefabs[1]);
                     prefab.GetComponent<DisplayCharacterInfo>().SetCharacter(a);
-                    prefab.transform.SetParent(ListContent.transform);
+                    prefab.transform.SetParent(RecruitListContent.transform);
                     break;
                 case "Scholar":
-                    prefab = GameObject.Instantiate(ScholarPrefab);
+                    prefab = GameObject.Instantiate(RecruitPrefabs[2]);
                     prefab.GetComponent<DisplayCharacterInfo>().SetCharacter(a);
-                    prefab.transform.SetParent(ListContent.transform);
+                    prefab.transform.SetParent(RecruitListContent.transform);
+                    break;
+                case "Psionic":
+                    prefab = GameObject.Instantiate(RecruitPrefabs[3]);
+                    prefab.GetComponent<DisplayCharacterInfo>().SetCharacter(a);
+                    prefab.transform.SetParent(RecruitListContent.transform);
+                    break;
+            }
+        }
+    }
+
+    public void DisplayPartyMembers()
+    {
+        foreach (Ally a in Characters)
+        {
+            GameObject prefab;
+            switch (a.CharacterName)
+            {
+
+                case "Wildlander":
+                    Debug.Log("Display Wildlander");
+                    prefab = GameObject.Instantiate(DraggablePrefabs[0]);
+                    prefab.GetComponent<DisplayPartyInfo>().SetCharacter(a);
+                    prefab.transform.SetParent(PartyListContent.transform);
+                    break;
+                case "Technician":
+                    Debug.Log("Display Technician");
+                    prefab = GameObject.Instantiate(DraggablePrefabs[1]);
+                    prefab.GetComponent<DisplayPartyInfo>().SetCharacter(a);
+                    prefab.transform.SetParent(PartyListContent.transform);
+                    break;
+                case "Scholar":
+                    Debug.Log("Display Scholar");
+                    prefab = GameObject.Instantiate(DraggablePrefabs[2]);
+                    prefab.GetComponent<DisplayPartyInfo>().SetCharacter(a);
+                    prefab.transform.SetParent(PartyListContent.transform);
+                    break;
+                case "Psionic":
+                    prefab = GameObject.Instantiate(DraggablePrefabs[3]);
+                    prefab.GetComponent<DisplayPartyInfo>().SetCharacter(a);
+                    prefab.transform.SetParent(PartyListContent.transform);
                     break;
             }
         }

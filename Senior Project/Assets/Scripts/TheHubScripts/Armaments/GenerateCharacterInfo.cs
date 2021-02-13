@@ -10,25 +10,25 @@ public class GenerateCharacterInfo : MonoBehaviour
     private Image TargetGraphic;
     public Sprite DisplayGraphic;
     private TextMeshProUGUI Brawn, Agility, Luck, Reason, Wit, Glamour, Class;
-    private Ally generatedCharacter;
-    private CharacterFactory characterFactory = new CharacterFactory();
+    private Ally GeneratedCharacter;
+    private CharacterFactory CharacterFactory = new CharacterFactory();
     private GameObject RecruitmentPage;
-    int randBrawn,
-    randAgility,
-    randLuck,
-    randReason,
-    randWit,
-    randGlamour;
-    public int characterToGenerate;
+    int RandBrawn,
+    RandAgility,
+    RandLuck,
+    RandReason,
+    RandWit,
+    RandGlamour;
+    public int CharacterToGenerate;
 
     public void SetGeneratedCharacter(Ally character)
     {
-        generatedCharacter = character;
+        GeneratedCharacter = character;
     }
 
     public Ally GetGeneratedCharacter()
     {
-        return generatedCharacter;
+        return GeneratedCharacter;
     }
 
     private void Awake()
@@ -43,7 +43,7 @@ public class GenerateCharacterInfo : MonoBehaviour
         Class = RecruitmentPage.transform.Find("Class").GetComponent<TextMeshProUGUI>();
         TargetGraphic = RecruitmentPage.transform.Find("CharacterImage").GetComponent<Image>();
 
-        switch (characterToGenerate)
+        switch (CharacterToGenerate)
         {
             case 1: //Wildlander
                 GenerateWildlander();
@@ -62,132 +62,124 @@ public class GenerateCharacterInfo : MonoBehaviour
 
     public void DisplayWildlander()
     {
-        Brawn.text = "Brawn: " + generatedCharacter.GetBrawn();
-        Agility.text = "Agility: " + generatedCharacter.GetAgility();
-        Luck.text = "Luck: " + generatedCharacter.GetLuck();
-        Reason.text = "Reason: " + generatedCharacter.GetReason();
-        Wit.text = "Wit: " + generatedCharacter.GetWit();
-        Glamour.text = "Glamour: " + generatedCharacter.GetGlamour();
+        Brawn.text = "Brawn: " + GeneratedCharacter.GetBrawn();
+        Agility.text = "Agility: " + GeneratedCharacter.GetAgility();
+        Luck.text = "Luck: " + GeneratedCharacter.GetLuck();
+        Reason.text = "Reason: " + GeneratedCharacter.GetReason();
+        Wit.text = "Wit: " + GeneratedCharacter.GetWit();
+        Glamour.text = "Glamour: " + GeneratedCharacter.GetGlamour();
         Class.text = "Class: Wildlander";
         TargetGraphic.sprite = DisplayGraphic;
         TargetGraphic.color = new Color(255, 255, 255, 255);
-        RecruitCharacter.SetCharacter(generatedCharacter, this.gameObject);
+        RecruitCharacter.SetCharacter(GeneratedCharacter, this.gameObject);
     }
 
     private void GenerateWildlander()
     {
-        if (generatedCharacter == null)
+        if (GeneratedCharacter == null)
         {
-            randBrawn = Random.Range(14, 21);
-            randAgility = Random.Range(14, 19);
-            randLuck = Random.Range(2, 21);
-            randReason = Random.Range(8, 13);
-            randWit = Random.Range(8, 15);
-            randGlamour = Random.Range(8, 15);
-            generatedCharacter = characterFactory.CreateNewWildlander(randBrawn, randAgility, randLuck, randReason, randWit, randGlamour);
-            generatedCharacter.CharacterImage = DisplayGraphic;
-            generatedCharacter.SetClass("Wildlander");
-            Debug.Log(RecruitCharacter.GetCharacter().CharacterName);
+            RandBrawn = Random.Range(14, 21);
+            RandAgility = Random.Range(14, 19);
+            RandLuck = Random.Range(2, 21);
+            RandReason = Random.Range(8, 13);
+            RandWit = Random.Range(8, 15);
+            RandGlamour = Random.Range(8, 15);
+            GeneratedCharacter = CharacterFactory.CreateNewWildlander(RandBrawn, RandAgility, RandLuck, RandReason, RandWit, RandGlamour);
+            GeneratedCharacter.CharacterImage = DisplayGraphic;
+            GeneratedCharacter.SetClass("Wildlander");
         }
         
     }
 
     public void DisplayTechnician()
     {
-        Brawn.text = "Brawn: " + generatedCharacter.GetBrawn();
-        Agility.text = "Agility: " + generatedCharacter.GetAgility();
-        Luck.text = "Luck: " + generatedCharacter.GetLuck();
-        Reason.text = "Reason: " + generatedCharacter.GetReason();
-        Wit.text = "Wit: " + generatedCharacter.GetWit();
-        Glamour.text = "Glamour: " + generatedCharacter.GetGlamour();
+        Brawn.text = "Brawn: " + GeneratedCharacter.GetBrawn();
+        Agility.text = "Agility: " + GeneratedCharacter.GetAgility();
+        Luck.text = "Luck: " + GeneratedCharacter.GetLuck();
+        Reason.text = "Reason: " + GeneratedCharacter.GetReason();
+        Wit.text = "Wit: " + GeneratedCharacter.GetWit();
+        Glamour.text = "Glamour: " + GeneratedCharacter.GetGlamour();
         Class.text = "Class: Technician";
         TargetGraphic.sprite = DisplayGraphic;
         TargetGraphic.color = new Color(255, 255, 255, 255);
-        RecruitCharacter.SetCharacter(generatedCharacter, this.gameObject);
+        RecruitCharacter.SetCharacter(GeneratedCharacter, this.gameObject);
     }
 
     private void GenerateTechnician()
     {
-        if (generatedCharacter == null)
+        if (GeneratedCharacter == null)
         {
-            randBrawn = Random.Range(8, 13);
-            randAgility = Random.Range(10, 15);
-            randLuck = Random.Range(0, 21);
-            randReason = Random.Range(12, 19);
-            randWit = Random.Range(14, 21);
-            randGlamour = Random.Range(10, 15);
-            generatedCharacter = characterFactory.CreateNewTechnician(randBrawn, randAgility, randLuck, randReason, randWit, randGlamour);
-            generatedCharacter.CharacterImage = DisplayGraphic;
-            generatedCharacter.SetClass("Technician");
-            Debug.Log(RecruitCharacter.GetCharacter().CharacterName);
+            RandBrawn = Random.Range(8, 13);
+            RandAgility = Random.Range(10, 15);
+            RandLuck = Random.Range(0, 21);
+            RandReason = Random.Range(12, 19);
+            RandWit = Random.Range(14, 21);
+            RandGlamour = Random.Range(10, 15);
+            GeneratedCharacter = CharacterFactory.CreateNewTechnician(RandBrawn, RandAgility, RandLuck, RandReason, RandWit, RandGlamour);
+            GeneratedCharacter.CharacterImage = DisplayGraphic;
+            GeneratedCharacter.SetClass("Technician");
         }
     }
 
     public void DisplayScholar()
     {
-        Brawn.text = "Brawn: " + generatedCharacter.GetBrawn();
-        Agility.text = "Agility: " + generatedCharacter.GetAgility();
-        Luck.text = "Luck: " + generatedCharacter.GetLuck();
-        Reason.text = "Reason: " + generatedCharacter.GetReason();
-        Wit.text = "Wit: " + generatedCharacter.GetWit();
-        Glamour.text = "Glamour: " + generatedCharacter.GetGlamour();
+        Brawn.text = "Brawn: " + GeneratedCharacter.GetBrawn();
+        Agility.text = "Agility: " + GeneratedCharacter.GetAgility();
+        Luck.text = "Luck: " + GeneratedCharacter.GetLuck();
+        Reason.text = "Reason: " + GeneratedCharacter.GetReason();
+        Wit.text = "Wit: " + GeneratedCharacter.GetWit();
+        Glamour.text = "Glamour: " + GeneratedCharacter.GetGlamour();
         Class.text = "Class: Scholar";
         TargetGraphic.sprite = DisplayGraphic;
         TargetGraphic.color = new Color(255, 255, 255, 255);
-        RecruitCharacter.SetCharacter(generatedCharacter, this.gameObject);
+        RecruitCharacter.SetCharacter(GeneratedCharacter, this.gameObject);
     }
 
     private void GenerateScholar()
     {
-        if (generatedCharacter == null)
+        if (GeneratedCharacter == null)
         {
-            randBrawn = Random.Range(8, 15);
-            randAgility = Random.Range(8, 13);
-            randLuck = Random.Range(2, 21);
-            randReason = Random.Range(12, 21);
-            randWit = Random.Range(14, 21);
-            randGlamour = Random.Range(12, 17);
-            generatedCharacter = characterFactory.CreateNewScholar(randBrawn, randAgility, randLuck, randReason, randWit, randGlamour);
-            generatedCharacter.CharacterImage = DisplayGraphic;
-            generatedCharacter.SetClass("Scholar");
-            Debug.Log(RecruitCharacter.GetCharacter().CharacterName);
+            RandBrawn = Random.Range(8, 15);
+            RandAgility = Random.Range(8, 13);
+            RandLuck = Random.Range(2, 21);
+            RandReason = Random.Range(12, 21);
+            RandWit = Random.Range(14, 21);
+            RandGlamour = Random.Range(12, 17);
+
+            GeneratedCharacter = CharacterFactory.CreateNewScholar(RandBrawn, RandAgility, RandLuck, RandReason, RandWit, RandGlamour);
+            GeneratedCharacter.CharacterImage = DisplayGraphic;
+            GeneratedCharacter.SetClass("Scholar");
         }
     }
 
     public void DisplayPsionic()
     {
-        Brawn.text = "Brawn: " + generatedCharacter.GetBrawn();
-        Agility.text = "Agility: " + generatedCharacter.GetAgility();
-        Luck.text = "Luck: " + generatedCharacter.GetLuck();
-        Reason.text = "Reason: " + generatedCharacter.GetReason();
-        Wit.text = "Wit: " + generatedCharacter.GetWit();
-        Glamour.text = "Glamour: " + generatedCharacter.GetGlamour();
+        Brawn.text = "Brawn: " + GeneratedCharacter.GetBrawn();
+        Agility.text = "Agility: " + GeneratedCharacter.GetAgility();
+        Luck.text = "Luck: " + GeneratedCharacter.GetLuck();
+        Reason.text = "Reason: " + GeneratedCharacter.GetReason();
+        Wit.text = "Wit: " + GeneratedCharacter.GetWit();
+        Glamour.text = "Glamour: " + GeneratedCharacter.GetGlamour();
         Class.text = "Class: Psionic";
         TargetGraphic.sprite = DisplayGraphic;
         TargetGraphic.color = new Color(255, 255, 255, 255);
-        RecruitCharacter.SetCharacter(generatedCharacter, this.gameObject);
+        RecruitCharacter.SetCharacter(GeneratedCharacter, this.gameObject);
     }
 
     private void GeneratePsionic()
     {
-        if (generatedCharacter == null)
+        if (GeneratedCharacter == null)
         {
-            randBrawn = Random.Range(10, 16);
-            randAgility = Random.Range(10, 13);
-            randLuck = Random.Range(0, 21);
-            randReason = Random.Range(12, 17);
-            randWit = Random.Range(10, 17);
-            randGlamour = Random.Range(12, 19);
-            Brawn.text = "Brawn: " + randBrawn;
-            Agility.text = "Agility: " + randAgility;
-            Luck.text = "Luck: " + randLuck;
-            Reason.text = "Reason: " + randReason;
-            Wit.text = "Wit: " + randWit;
-            Glamour.text = "Glamour: " + randGlamour;
+            RandBrawn = Random.Range(10, 16);
+            RandAgility = Random.Range(10, 13);
+            RandLuck = Random.Range(0, 21);
+            RandReason = Random.Range(12, 17);
+            RandWit = Random.Range(10, 17);
+            RandGlamour = Random.Range(12, 19);
 
-            generatedCharacter = characterFactory.CreateNewPsionic(randBrawn, randAgility, randLuck, randReason, randWit, randGlamour);
-            generatedCharacter.CharacterImage = DisplayGraphic;
-            generatedCharacter.SetClass("Psionic");
+            GeneratedCharacter = CharacterFactory.CreateNewPsionic(RandBrawn, RandAgility, RandLuck, RandReason, RandWit, RandGlamour);
+            GeneratedCharacter.CharacterImage = DisplayGraphic;
+            GeneratedCharacter.SetClass("Psionic");
         }
     }
 }

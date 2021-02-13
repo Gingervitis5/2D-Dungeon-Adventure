@@ -42,7 +42,7 @@ public class ExitArmaments : MonoBehaviour
         {
             if (!child.name.Equals("RecruitContent"))
             {
-                child.SetParent(null);
+                GameObject.Destroy(child.gameObject);
             }
         }
     }

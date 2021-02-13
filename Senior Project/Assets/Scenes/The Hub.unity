@@ -1077,7 +1077,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5d8175f4617604fb19480ab151bb4b5a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 71ba5e3956960473cbae34a603fc674c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2496,7 +2496,7 @@ MonoBehaviour:
   MissionBriefingScreen: {fileID: 54040416}
   BackButton: {fileID: 589560105}
   StartButton: {fileID: 1461957996}
-  PartySelect: {fileID: 0}
+  PartyScreen: {fileID: 0}
   AssociatedImage: {fileID: 21300000, guid: 935904d2a882d4445a288fac4152709e, type: 3}
 --- !u!1 &220699451
 GameObject:
@@ -2516,7 +2516,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &220699452
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6000,7 +6000,7 @@ MonoBehaviour:
   MissionBriefingScreen: {fileID: 54040416}
   BackButton: {fileID: 589560105}
   StartButton: {fileID: 1461957996}
-  PartySelect: {fileID: 249442560}
+  PartyScreen: {fileID: 249442560}
   AssociatedImage: {fileID: 21300000, guid: 71ba5e3956960473cbae34a603fc674c, type: 3}
 --- !u!114 &589560111
 MonoBehaviour:
@@ -8603,7 +8603,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1008298448
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9797,6 +9797,8 @@ MonoBehaviour:
   LVLMarkers:
   - {fileID: 1564862998}
   BackButton: {fileID: 589560105}
+  PartyScreen: {fileID: 249442560}
+  ListContent: {fileID: 862808266}
 --- !u!1 &1171827409
 GameObject:
   m_ObjectHideFlags: 0
@@ -12178,7 +12180,7 @@ MonoBehaviour:
   MissionBriefingScreen: {fileID: 54040416}
   BackButton: {fileID: 589560105}
   StartButton: {fileID: 1461957996}
-  PartySelect: {fileID: 249442560}
+  PartyScreen: {fileID: 249442560}
   AssociatedImage: {fileID: 21300000, guid: 5d8175f4617604fb19480ab151bb4b5a, type: 3}
 --- !u!114 &1461958002
 MonoBehaviour:

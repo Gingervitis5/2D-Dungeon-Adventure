@@ -8,7 +8,7 @@ public class DisplayWeapon : MonoBehaviour
 {
     public Image TargetGraphic;
     public Sprite DisplayGraphic;
-    public TextMeshProUGUI Name, Damage, Range, Handling, Type; 
+    public TextMeshProUGUI Name, Damage, Range, Handling, Type, Price; 
 
     public void DisplayCRAVS()
     {
@@ -17,6 +17,7 @@ public class DisplayWeapon : MonoBehaviour
         Range.text = "Range: 20-30m";
         Handling.text = "Handling: 30";
         Type.text = "Type: Assault Rifle";
+        Price.text = "5000";
 
         TargetGraphic.sprite = DisplayGraphic;
         TargetGraphic.color = new Color(255, 255, 255, 255);
@@ -29,6 +30,7 @@ public class DisplayWeapon : MonoBehaviour
         Range.text = "Range: 10-20m";
         Handling.text = "Handling: 35";
         Type.text = "Type: Assault Rifle";
+        Price.text = "3000";
 
         TargetGraphic.sprite = DisplayGraphic;
         TargetGraphic.color = new Color(255, 255, 255, 255);
@@ -41,6 +43,7 @@ public class DisplayWeapon : MonoBehaviour
         Range.text = "Range: 25-35m";
         Handling.text = "Handling: 25";
         Type.text = "Type: Marksman Rifle";
+        Price.text = "4250";
 
         TargetGraphic.sprite = DisplayGraphic;
         TargetGraphic.color = new Color(255, 255, 255, 255);
@@ -53,6 +56,7 @@ public class DisplayWeapon : MonoBehaviour
         Range.text = "Range: 20-25m";
         Handling.text = "Handling: 30";
         Type.text = "Type: Pulse Rifle";
+        Price.text = "5500";
 
         TargetGraphic.sprite = DisplayGraphic;
         TargetGraphic.color = new Color(255, 255, 255, 255);
@@ -65,6 +69,7 @@ public class DisplayWeapon : MonoBehaviour
         Range.text = "Range: 5-12m";
         Handling.text = "Handling: 20";
         Type.text = "Type: Sub Machine Gun";
+        Price.text = "2500";
 
         TargetGraphic.sprite = DisplayGraphic;
         TargetGraphic.color = new Color(255, 255, 255, 255);
@@ -77,6 +82,7 @@ public class DisplayWeapon : MonoBehaviour
         Range.text = "Range: 10-15m";
         Handling.text = "Handling: 25";
         Type.text = "Type: Sub Machine Gun";
+        Price.text = "2650";
 
         TargetGraphic.sprite = DisplayGraphic;
         TargetGraphic.color = new Color(255, 255, 255, 255);
@@ -89,6 +95,7 @@ public class DisplayWeapon : MonoBehaviour
         Range.text = "Range: 3-8m";
         Handling.text = "Handling: 50";
         Type.text = "Type: Shotgun";
+        Price.text = "3250";
 
         TargetGraphic.sprite = DisplayGraphic;
         TargetGraphic.color = new Color(255, 255, 255, 255);
@@ -101,6 +108,7 @@ public class DisplayWeapon : MonoBehaviour
         Range.text = "Range: 5-10m";
         Handling.text = "Handling: 45";
         Type.text = "Type: Shotgun";
+        Price.text = "3000";
 
         TargetGraphic.sprite = DisplayGraphic;
         TargetGraphic.color = new Color(255, 255, 255, 255);
@@ -113,6 +121,7 @@ public class DisplayWeapon : MonoBehaviour
         Range.text = "Range: 90-120m";
         Handling.text = "Handling: 40";
         Type.text = "Type: Sniper Rifle";
+        Price.text = "7000";
 
         TargetGraphic.sprite = DisplayGraphic;
         TargetGraphic.color = new Color(255, 255, 255, 255);
@@ -125,6 +134,7 @@ public class DisplayWeapon : MonoBehaviour
         Range.text = "Range: 70-125m";
         Handling.text = "Handling: 20";
         Type.text = "Type: Sniper Rifle";
+        Price.text = "4800";
 
         TargetGraphic.sprite = DisplayGraphic;
         TargetGraphic.color = new Color(255, 255, 255, 255);
@@ -137,6 +147,7 @@ public class DisplayWeapon : MonoBehaviour
         Range.text = "Range: 62-112m";
         Handling.text = "Handling: 15";
         Type.text = "Type: Energy Sniper";
+        Price.text = "7500";
 
         TargetGraphic.sprite = DisplayGraphic;
         TargetGraphic.color = new Color(255, 255, 255, 255);

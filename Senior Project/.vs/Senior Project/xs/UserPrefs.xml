@@ -1,10 +1,11 @@
 ﻿<Properties StartupConfiguration="{25123671-DE14-B5AC-A4A4-5268D0396AF6}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/TheHubScripts/MissionBriefing/MissionContextSwitcher.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/TheHubScripts/Armaments/RecruitCharacter.cs">
     <Files>
-      <File FileName="Assets/Scripts/TheHubScripts/Armaments/GenerateCharacterInfo.cs" Line="87" Column="68" />
-      <File FileName="Assets/Scripts/TheHubScripts/Armaments/RecruitmentDisplayer.cs" Line="50" Column="68" />
-      <File FileName="Assets/Scripts/TheHubScripts/MissionBriefing/ResetMissionScreen.cs" Line="50" Column="10" />
-      <File FileName="Assets/Scripts/TheHubScripts/MissionBriefing/MissionContextSwitcher.cs" Line="87" Column="47" />
+      <File FileName="Assets/Scripts/TheHubScripts/BlackMarket/PurchaseWeapon.cs" Line="214" Column="77" />
+      <File FileName="Assets/Scripts/TheHubScripts/BlackMarket/PurchaseItem.cs" Line="77" Column="74" />
+      <File FileName="Assets/Scripts/Classes/Items/Item.cs" Line="9" Column="29" />
+      <File FileName="Assets/Scripts/Classes/Items/ItemFactory.cs" Line="17" Column="50" />
+      <File FileName="Assets/Scripts/TheHubScripts/Armaments/RecruitCharacter.cs" Line="31" Column="78" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -12,12 +13,16 @@
           <Node name="Senior Project" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="Classes" expanded="True" />
+                <Node name="Classes" expanded="True">
+                  <Node name="Combatants" expanded="True" />
+                  <Node name="Items" expanded="True" />
+                </Node>
                 <Node name="TheHubScripts" expanded="True">
-                  <Node name="Armaments" expanded="True" />
-                  <Node name="MissionBriefing" expanded="True">
-                    <Node name="MissionContextSwitcher.cs" selected="True" />
+                  <Node name="Armaments" expanded="True">
+                    <Node name="RecruitCharacter.cs" selected="True" />
                   </Node>
+                  <Node name="BlackMarket" expanded="True" />
+                  <Node name="MissionBriefing" expanded="True" />
                 </Node>
               </Node>
             </Node>
@@ -28,7 +33,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="e5453865-c055-499b-9847-13165c2d4d64" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="d9b77b30-fc7f-40c3-abde-0f334eb55cd4" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

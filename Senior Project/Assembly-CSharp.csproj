@@ -64,7 +64,7 @@
     <Compile Include="Assets/Scripts/TheHubScripts/DisableOnStart.cs" />
     <Compile Include="Assets/Scripts/TheHubScripts/MissionBriefing/MarkerSpinner.cs" />
     <Compile Include="Assets/Scripts/PartyMasterScript.cs" />
-    <Compile Include="Assets/Scripts/TheHubScripts/BlackMarket/ResetBlackMarketScreen.cs" />
+    <Compile Include="Assets/Scripts/TheHubScripts/BlackMarket/ExitBlackMarket.cs" />
     <Compile Include="Assets/Scripts/TheHubScripts/UIHighlight.cs" />
     <Compile Include="Assets/Scripts/Classes/Combatants/Combatant.cs" />
     <Compile Include="Assets/Scripts/TheHubScripts/BlackMarket/WeaponTabSwitcher.cs" />
@@ -97,6 +97,7 @@
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ShaderPropAnimator.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextSelector_A.cs" />
     <Compile Include="Assets/Scripts/TheHubScripts/MissionBriefing/ManipulateList.cs" />
+    <Compile Include="Assets/Scripts/TheHubScripts/Armaments/RecruitmentDisplayer.cs" />
     <Compile Include="Assets/Scripts/TheHubScripts/MissionBriefing/MissionContextSwitcher.cs" />
     <Compile Include="Assets/Scripts/TheHubScripts/MissionBriefing/ResetMissionScreen.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/SimpleScript.cs" />
@@ -132,7 +133,6 @@
     <Compile Include="Assets/Scripts/TheHubScripts/Armaments/GenerateCharacterInfo.cs" />
     <Compile Include="Assets/Scripts/Classes/Combatants/Wildlander.cs" />
     <Compile Include="Assets/Scripts/InventoryMasterScript.cs" />
-    <Compile Include="Assets/Scripts/TheHubScripts/Armaments/RecruitmentDisplayer.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />

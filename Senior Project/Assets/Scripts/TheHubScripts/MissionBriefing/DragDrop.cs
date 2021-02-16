@@ -51,9 +51,13 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
                 slot = r.gameObject;    //Set the new slot
                 slot.gameObject.GetComponent<DropBox>().SetSlottedCharacter(this.gameObject);   //Set the current slot's character
                 hit = true;
+                PartyMasterScript.AddPartyMember(GetComponent<DisplayPartyInfo>().GetCharacter());
             }
         }
-        if (!hit) { this.gameObject.transform.SetParent(ListContent.transform); }
+        if (!hit) {
+            this.gameObject.transform.SetParent(ListContent.transform);
+            PartyMasterScript.RemovePartyMember(GetComponent<DisplayPartyInfo>().GetCharacter());
+        }
         canvasGroup.blocksRaycasts = true;
     }
 

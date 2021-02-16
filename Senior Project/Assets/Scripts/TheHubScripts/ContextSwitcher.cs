@@ -39,6 +39,8 @@ public class ContextSwitcher : MonoBehaviour    //This switches between menus in
                     b.GetComponent<Image>().enabled = true;
                     b.GetComponentInChildren<TextMeshProUGUI>().enabled = true;
                 }
+                ConsumeIconParent.transform.parent.Find("Credits").gameObject.SetActive(true);
+                ConsumeIconParent.transform.parent.Find("Price").gameObject.SetActive(true);
                 if (BMLastScreenOn != null) //Set active the last page seen on the Black Market
                 {
                     BMLastScreenOn.SetActive(true);
@@ -57,7 +59,7 @@ public class ContextSwitcher : MonoBehaviour    //This switches between menus in
                 break;
             case "Armaments":
                 //Reset Vault Door
-                ArmamentsCanvas.transform.Find("Vault Door").position = new Vector3(820,420,0);
+                //ArmamentsCanvas.transform.Find("Vault Door").position = new Vector3(820,420,0);
                 ControlPanel.GetComponent<ControlPanel>().EnableArmaments();
                 Animation[] ARM_Animations = ArmamentsCanvas.GetComponentsInChildren<Animation>();
                 for (int i = ARM_Animations.Length-1; i >= 0; i--)  // Play all animations 

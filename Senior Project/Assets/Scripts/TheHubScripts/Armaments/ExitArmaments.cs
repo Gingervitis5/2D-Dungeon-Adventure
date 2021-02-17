@@ -45,5 +45,7 @@ public class ExitArmaments : MonoBehaviour
                 GameObject.Destroy(child.gameObject);
             }
         }
+
+        GameObject.Find("Vault Door").GetComponent<Image>().enabled = true;
     }
 }

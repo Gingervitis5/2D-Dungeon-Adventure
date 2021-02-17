@@ -13,7 +13,13 @@ public class DropBox : MonoBehaviour, IDropHandler
 
         if (eventData.pointerDrag != null)
         {
-            if (slottedCharacter != null && slottedCharacter != eventData.pointerDrag) { slottedCharacter.transform.SetParent(ListContent.transform); }
+            if (slottedCharacter != null && slottedCharacter != eventData.pointerDrag) {
+                slottedCharacter.transform.SetParent(ListContent.transform);
+                if (PartyMasterScript.GetAllies().Contains(slottedCharacter.GetComponent<DisplayPartyInfo>().GetCharacter()))
+                {
+                    PartyMasterScript.RemovePartyMember(slottedCharacter.GetComponent<DisplayPartyInfo>().GetCharacter());
+                }
+            }
             eventData.pointerDrag.GetComponent<RectTransform>().SetParent(this.transform);
             eventData.pointerDrag.GetComponent<RectTransform>().anchorMin = new Vector2(0.5f, 0.5f);
             eventData.pointerDrag.GetComponent<RectTransform>().anchorMax = new Vector2(0.5f, 0.5f);

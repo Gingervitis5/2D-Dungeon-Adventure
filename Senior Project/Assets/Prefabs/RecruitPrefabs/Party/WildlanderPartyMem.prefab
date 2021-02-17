@@ -1,31 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!61 &-6790777446396593949
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 573238702549580756}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.13342285, y: -0.20436096}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 103.76758, y: 103.90842}
-  m_EdgeRadius: 0
 --- !u!225 &-2828550275917895320
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -73,7 +47,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3538626300277601128, guid: 7a306b498c7b040aca2eb4f1eb858515, type: 3}
       propertyPath: m_Name
-      value: WildlanderParty
+      value: WildlanderPartyMem
       objectReference: {fileID: 0}
     - target: {fileID: 3538626300277601129, guid: 7a306b498c7b040aca2eb4f1eb858515, type: 3}
       propertyPath: m_LocalPosition.x

@@ -5,9 +5,33 @@ using UnityEngine;
 public class PartyMasterScript : MonoBehaviour
 {
     private List<Ally> Characters = new List<Ally>();
+    private static List<Ally> Party = new List<Ally>();
     public GameObject RecruitListContent, PartyListContent;
     public GameObject[] RecruitPrefabs;
     public GameObject[] DraggablePrefabs;
+
+    public static List<Ally> GetAllies()
+    {
+        return Party;
+    }
+
+    public static void AddPartyMember(Ally ally)
+    {
+        Party.Add(ally);
+        foreach(Ally a in Party)
+        {
+            Debug.Log("Party Member: " + a.CharacterName);
+        }
+    }
+
+    public static void RemovePartyMember(Ally ally)
+    {
+        Party.Remove(ally);
+        foreach (Ally a in Party)
+        {
+            Debug.Log("Party Member: " + a.CharacterName);
+        }
+    }
 
     public void RecruitCharacter(Ally recruit)
     {

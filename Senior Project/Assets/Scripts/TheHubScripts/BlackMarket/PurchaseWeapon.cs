@@ -25,37 +25,81 @@ public class PurchaseWeapon : MonoBehaviour
         switch (WeaponToPurchase)
         {
             case "CRAVS Model 86":
-                PurchaseCRAVS();
+                if (InventoryMaster.GetComponent<InventoryMasterScript>().GetNumCredits() >= 5000)
+                {
+                    PurchaseCRAVS();
+                    InventoryMaster.GetComponent<InventoryMasterScript>().DetractCredits(5000);
+                }
                 break;
             case "AR-3117":
-                PurchaseAR3117();
+                if (InventoryMaster.GetComponent<InventoryMasterScript>().GetNumCredits() >= 3000)
+                {
+                    PurchaseAR3117();
+                    InventoryMaster.GetComponent<InventoryMasterScript>().DetractCredits(3000);
+                }
                 break;
             case "MR-38":
-                PurchaseMR38();
+                if (InventoryMaster.GetComponent<InventoryMasterScript>().GetNumCredits() >= 4250)
+                {
+                    PurchaseMR38();
+                    InventoryMaster.GetComponent<InventoryMasterScript>().DetractCredits(4250);
+                }
                 break;
             case "ES-943":
-                PurchaseES943();
+                if (InventoryMaster.GetComponent<InventoryMasterScript>().GetNumCredits() >= 5500)
+                {
+                    PurchaseES943();
+                    InventoryMaster.GetComponent<InventoryMasterScript>().DetractCredits(5500);
+                }
                 break;
             case "KML-199":
-                PurchaseKML199();
+                if (InventoryMaster.GetComponent<InventoryMasterScript>().GetNumCredits() >= 2500)
+                {
+                    PurchaseKML199();
+                    InventoryMaster.GetComponent<InventoryMasterScript>().DetractCredits(2500);
+                }
                 break;
             case "Karn 99s":
-                PurchaseKarn99s();
+                if (InventoryMaster.GetComponent<InventoryMasterScript>().GetNumCredits() >= 2650)
+                {
+                    PurchaseKarn99s();
+                    InventoryMaster.GetComponent<InventoryMasterScript>().DetractCredits(2650);
+                }
                 break;
             case "55-Stinger":
-                Purchase55Stinger();
+                if (InventoryMaster.GetComponent<InventoryMasterScript>().GetNumCredits() >= 3250)
+                {
+                    Purchase55Stinger();
+                    InventoryMaster.GetComponent<InventoryMasterScript>().DetractCredits(3250);
+                }   
                 break;
             case "CQ-24":
-                PurchaseCQ24();
+                if (InventoryMaster.GetComponent<InventoryMasterScript>().GetNumCredits() >= 3000)
+                {
+                    PurchaseCQ24();
+                    InventoryMaster.GetComponent<InventoryMasterScript>().DetractCredits(3000);
+                }
                 break;
             case "48b Anti-Personnel Rifle":
-                Purchase48bAntiPersonnelRifle();
+                if (InventoryMaster.GetComponent<InventoryMasterScript>().GetNumCredits() >= 7000)
+                {
+                    Purchase48bAntiPersonnelRifle();
+                    InventoryMaster.GetComponent<InventoryMasterScript>().DetractCredits(7000);
+                }
                 break;
             case "Draksolv":
-                PurchaseDraksolv();
+                if (InventoryMaster.GetComponent<InventoryMasterScript>().GetNumCredits() >= 4800)
+                {
+                    PurchaseDraksolv();
+                    InventoryMaster.GetComponent<InventoryMasterScript>().DetractCredits(4800);
+                }
                 break;
             case "Stormfront PS":
-                PurchaseStormfrontPS();
+                if (InventoryMaster.GetComponent<InventoryMasterScript>().GetNumCredits() >= 7500)
+                {
+                    PurchaseStormfrontPS();
+                    InventoryMaster.GetComponent<InventoryMasterScript>().DetractCredits(7500);
+                }
                 break;
             default:
                 Debug.Log("Nothing was bought");

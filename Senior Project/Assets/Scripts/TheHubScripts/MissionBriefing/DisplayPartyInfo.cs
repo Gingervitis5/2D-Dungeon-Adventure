@@ -39,6 +39,11 @@ public class DisplayPartyInfo : MonoBehaviour
         character = a;
     }
 
+    public Ally GetCharacter()
+    {
+        return character;
+    }
+
     public void DisplayCharacter()
     {
         Debug.Log(character);
@@ -51,16 +56,8 @@ public class DisplayPartyInfo : MonoBehaviour
         Glamour.text = "Glamour: " + character.GetGlamour();
         Class.text = "Class: " + character.GetClass();
 
-        /*Weapon charWeapon = character.GetWeapon();
-        WeaponName.text = "Name: " + charWeapon.ItemName;
-        Damage.text = "Damage: " + charWeapon.getMinDamage() + "-" + charWeapon.getMaxDamage();
-        Handling.text = "Handling: " + charWeapon.getHandling();
-        Type.text = "Type: " + charWeapon.GetWeaponType();*/
-        Debug.Log("Target Graphic: " + TargetGraphic.name);
-        //Debug.Log("Display Graphic: " + DisplayGraphic.name);
         TargetGraphic.sprite = DisplayGraphic;
         TargetGraphic.color = new Color(255, 255, 255, 255);
-        /*WeaponTargetGraphic.sprite = charWeapon.ItemImage;
-        WeaponTargetGraphic.color = new Color(255, 255, 255, 255);*/
+
     }
 }

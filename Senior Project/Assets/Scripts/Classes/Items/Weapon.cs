@@ -28,5 +28,7 @@ public class Weapon : Item
     public int getMaxDamage() { return MaxDamage; }
     public int getMinDamage() { return MinDamage; }
     public double getHandling() { return Handling; }
-
+    public double getCritChance() { return CritChance; }
+    public double getCritMultiplier() { return CritMultiplier; }
+    public int getRoundsPerAction() { return RoundsPerAction; }
 }

@@ -65,7 +65,6 @@ public class ContextSwitcher : MonoBehaviour    //This switches between menus in
                     ARM_Animations[i].Play();
                     yield return new WaitForSeconds(2f);
                 }
-                GameObject.FindGameObjectWithTag("Party Master").gameObject.GetComponent<PartyMasterScript>().DisplayRecruitedMembers();
                 break;
         }
     }

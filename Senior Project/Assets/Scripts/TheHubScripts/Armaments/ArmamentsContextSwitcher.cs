@@ -24,7 +24,7 @@ public class ArmamentsContextSwitcher : MonoBehaviour
                 Pages[1].SetActive(true);
                 WindowPage.sprite = Graphics[1];
                 DestroyChildren();
-                PartyMaster.GetComponent<PartyMasterScript>().DisplayRecruitedMembers();
+                PartyMaster.GetComponent<PartyMasterScript>().DisplayPartyMembers();
                 break;
             case false:
                 Debug.Log("Switch to recruit");
@@ -32,20 +32,19 @@ public class ArmamentsContextSwitcher : MonoBehaviour
                 Pages[1].SetActive(false);
                 DestroyChildren();
                 WindowPage.sprite = Graphics[0];
-                RecruitmentPage.GetComponent<RecruitmentDisplayer>().DisplayRecruits();
+                RecruitmentPage.GetComponent<RecruitmentRandomizer>().DisplayRecruits();
                 break;
         }
     }
 
-    private void DestroyChildren()  
+    private void DestroyChildren()  // For some reason, this destroys ListContent, fix plz
     {
         Transform[] children = ListContent.GetComponentsInChildren<Transform>();
         foreach(Transform child in children)
         {
-            if (!child.name.Equals("RecruitContent"))
+            if (!child.name.Equals("Content"))
             {
                 child.SetParent(null);
-                GameObject.Destroy(child.gameObject);
             }
         } 
     }

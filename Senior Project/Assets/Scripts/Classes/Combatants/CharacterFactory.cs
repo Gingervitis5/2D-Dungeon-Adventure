@@ -15,7 +15,7 @@ namespace AssemblyCSharp.Assets.Scripts.Classes
             NewWildlander.SetReason(reason);
             NewWildlander.SetWit(wit);
             NewWildlander.SetGlamour(glamour);
-            NewWildlander.CharacterName = "Wildlander";
+            NewWildlander.characterName = "Wildlander";
             return NewWildlander;
         }
 
@@ -28,7 +28,7 @@ namespace AssemblyCSharp.Assets.Scripts.Classes
             NewTechnician.SetReason(reason);
             NewTechnician.SetWit(wit);
             NewTechnician.SetGlamour(glamour);
-            NewTechnician.CharacterName = "Technician";
+            NewTechnician.characterName = "Technician";
             return NewTechnician;
         }
 
@@ -41,21 +41,56 @@ namespace AssemblyCSharp.Assets.Scripts.Classes
             NewScholar.SetReason(reason);
             NewScholar.SetWit(wit);
             NewScholar.SetGlamour(glamour);
-            NewScholar.CharacterName = "Scholar";
+            NewScholar.characterName = "Scholar";
             return NewScholar;
         }
-
         public Psionic CreateNewPsionic(int brawn, int agility, int luck, int reason, int wit, int glamour)
         {
-            Psionic NewScholar = ScriptableObject.CreateInstance<Psionic>();
-            NewScholar.SetBrawn(brawn);
-            NewScholar.SetAgility(agility);
-            NewScholar.SetLuck(luck);
-            NewScholar.SetReason(reason);
-            NewScholar.SetWit(wit);
-            NewScholar.SetGlamour(glamour);
-            NewScholar.CharacterName = "Psionic";
-            return NewScholar;
+            Psionic NewPsionic = ScriptableObject.CreateInstance<Psionic>();
+            NewPsionic.SetBrawn(brawn);
+            NewPsionic.SetAgility(agility);
+            NewPsionic.SetLuck(luck);
+            NewPsionic.SetReason(reason);
+            NewPsionic.SetWit(wit);
+            NewPsionic.SetGlamour(glamour);
+            NewPsionic.characterName = "Psionic";
+            return NewPsionic;
+        }
+        public Soldier CreateNewSoldier(int brawn, int agility, int luck, int reason, int wit, int glamour)
+        {
+            Soldier newSoldier = ScriptableObject.CreateInstance<Soldier>();
+            newSoldier.SetBrawn(brawn);
+            newSoldier.SetAgility(agility);
+            newSoldier.SetLuck(luck);
+            newSoldier.SetReason(reason);
+            newSoldier.SetWit(wit);
+            newSoldier.SetGlamour(glamour);
+            newSoldier.characterName = "Soldier";
+            return newSoldier;
+        }
+        public Operative CreateNewOperative(int brawn, int agility, int luck, int reason, int wit, int glamour)
+        {
+            Operative newOperative = ScriptableObject.CreateInstance<Operative>();
+            newOperative.SetBrawn(brawn);
+            newOperative.SetAgility(agility);
+            newOperative.SetLuck(luck);
+            newOperative.SetReason(reason);
+            newOperative.SetWit(wit);
+            newOperative.SetGlamour(glamour);
+            newOperative.characterName = "Operative";
+            return newOperative;
+        }
+        public Delegate CreateNewDelegate(int brawn, int agility, int luck, int reason, int wit, int glamour)
+        {
+            Delegate newDelegate = ScriptableObject.CreateInstance<Delegate>();
+            newDelegate.SetBrawn(brawn);
+            newDelegate.SetAgility(agility);
+            newDelegate.SetLuck(luck);
+            newDelegate.SetReason(reason);
+            newDelegate.SetWit(wit);
+            newDelegate.SetGlamour(glamour);
+            newDelegate.characterName = "Delegate";
+            return newDelegate;
         }
     }
 }

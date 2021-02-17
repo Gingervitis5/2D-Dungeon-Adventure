@@ -23,13 +23,13 @@ public class DisplayCharacterInfo : MonoBehaviour
         Wit = PartyMemberPage.transform.Find("Wit").GetComponent<TextMeshProUGUI>();
         Glamour = PartyMemberPage.transform.Find("Glamour").GetComponent<TextMeshProUGUI>();
 
-        WeaponName = PartyMemberPage.transform.Find("WeaponTab").Find("WeaponName").GetComponent<TextMeshProUGUI>();
-        Damage = PartyMemberPage.transform.Find("WeaponTab").Find("Damage").GetComponent<TextMeshProUGUI>();
-        Handling = PartyMemberPage.transform.Find("WeaponTab").Find("Handling").GetComponent<TextMeshProUGUI>();
-        Type = PartyMemberPage.transform.Find("WeaponTab").Find("Type").GetComponent<TextMeshProUGUI>();
+        WeaponName = PartyMemberPage.transform.Find("WeaponName").GetComponent<TextMeshProUGUI>();
+        Damage = PartyMemberPage.transform.Find("Damage").GetComponent<TextMeshProUGUI>();
+        Handling = PartyMemberPage.transform.Find("Handling").GetComponent<TextMeshProUGUI>();
+        Type = PartyMemberPage.transform.Find("Type").GetComponent<TextMeshProUGUI>();
 
         TargetGraphic = PartyMemberPage.transform.Find("CharacterImage").GetComponent<Image>();
-        WeaponTargetGraphic = PartyMemberPage.transform.Find("WeaponTab").Find("WeaponImage").GetComponent<Image>();
+        WeaponTargetGraphic = PartyMemberPage.transform.Find("WeaponImage").GetComponent<Image>();
     }
 
     public void SetCharacter(Ally a)

@@ -18,11 +18,6 @@ public class RecruitCharacter : MonoBehaviour
         CharacterIcon = icon;
     }
 
-    public static Ally GetCharacter()
-    {
-        return CharacterToRecruit;
-    }
-
     public void Recruit()
     {
         if (CharacterToRecruit != null)
@@ -33,7 +28,6 @@ public class RecruitCharacter : MonoBehaviour
             CharacterToRecruit.GetWeapon().SetWeaponType("Assault Rifle");
             CharacterToRecruit.GetWeapon().SetItemImage(BCRSI);
             CharacterToRecruit.SetLevel(1);
-            RecruitmentDisplayer.RemoveRecruit(CharacterIcon.GetComponent<GenerateCharacterInfo>().GetGeneratedCharacter());
             PartyMaster.GetComponent<PartyMasterScript>().RecruitCharacter(CharacterToRecruit);
             GameObject.Destroy(CharacterIcon);
             CharacterToRecruit = null;

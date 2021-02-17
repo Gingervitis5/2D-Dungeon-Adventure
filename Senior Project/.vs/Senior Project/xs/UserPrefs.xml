@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{25123671-DE14-B5AC-A4A4-5268D0396AF6}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/TheHubScripts/Armaments/RecruitCharacter.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/TheHubScripts/BlackMarket/PurchaseItem.cs">
     <Files>
-      <File FileName="Assets/Scripts/TheHubScripts/BlackMarket/PurchaseWeapon.cs" Line="214" Column="77" />
-      <File FileName="Assets/Scripts/TheHubScripts/BlackMarket/PurchaseItem.cs" Line="77" Column="74" />
+      <File FileName="Assets/Scripts/TheHubScripts/BlackMarket/PurchaseWeapon.cs" Line="80" Column="21" />
+      <File FileName="Assets/Scripts/TheHubScripts/BlackMarket/PurchaseItem.cs" Line="86" Column="83" />
       <File FileName="Assets/Scripts/Classes/Items/Item.cs" Line="9" Column="29" />
       <File FileName="Assets/Scripts/Classes/Items/ItemFactory.cs" Line="17" Column="50" />
       <File FileName="Assets/Scripts/TheHubScripts/Armaments/RecruitCharacter.cs" Line="31" Column="78" />
@@ -18,10 +18,10 @@
                   <Node name="Items" expanded="True" />
                 </Node>
                 <Node name="TheHubScripts" expanded="True">
-                  <Node name="Armaments" expanded="True">
-                    <Node name="RecruitCharacter.cs" selected="True" />
+                  <Node name="Armaments" expanded="True" />
+                  <Node name="BlackMarket" expanded="True">
+                    <Node name="PurchaseItem.cs" selected="True" />
                   </Node>
-                  <Node name="BlackMarket" expanded="True" />
                   <Node name="MissionBriefing" expanded="True" />
                 </Node>
               </Node>

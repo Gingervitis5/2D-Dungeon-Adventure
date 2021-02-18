@@ -37,7 +37,6 @@ public class MissionContextSwitcher : MonoBehaviour
     public void StartPartySelect()
     {
         MissionTrans.GetComponent<Animation>().Play("MissionTrans");
-        PartyScreen.SetActive(true);
         StartCoroutine(EnablePartySelect());
     }
 
@@ -56,9 +55,10 @@ public class MissionContextSwitcher : MonoBehaviour
     IEnumerator EnablePartySelect()
     {
         yield return new WaitForSeconds(1);
+        StartButton.GetComponent<ManipulateList>().DisplayAvailableMembers();
         StartButton.SetActive(false);
         MissionBriefingScreen.GetComponent<Image>().sprite = AssociatedImage;
-
+        PartyScreen.SetActive(true);
     }
 
     IEnumerator SwitchBack()

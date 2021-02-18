@@ -11,10 +11,12 @@ public class DisplayPartyInfo : MonoBehaviour
     private TextMeshProUGUI Level, Brawn, Agility, Luck, Reason, Wit, Glamour, Class;
     private TextMeshProUGUI WeaponName, Damage, Handling, Type;
     private GameObject PartySelect;
+    private Canvas MBCanvas;
 
     public void Awake()
     {
-        PartySelect = GameObject.FindGameObjectWithTag("Party Select");
+        MBCanvas = GameObject.Find("MissionBriefingCanvas").GetComponent<Canvas>();
+        PartySelect = MBCanvas.transform.Find("Party Select").gameObject;
         Debug.Log(PartySelect);
         Level = PartySelect.transform.Find("Level").GetComponent<TextMeshProUGUI>();
         Brawn = PartySelect.transform.Find("Brawn").GetComponent<TextMeshProUGUI>();
@@ -24,14 +26,7 @@ public class DisplayPartyInfo : MonoBehaviour
         Wit = PartySelect.transform.Find("Wit").GetComponent<TextMeshProUGUI>();
         Glamour = PartySelect.transform.Find("Glamour").GetComponent<TextMeshProUGUI>();
         Class = PartySelect.transform.Find("Class").GetComponent<TextMeshProUGUI>();
-
-        /*WeaponName = PartySelect.transform.Find("WeaponTab").Find("WeaponName").GetComponent<TextMeshProUGUI>();
-        Damage = PartySelect.transform.Find("WeaponTab").Find("Damage").GetComponent<TextMeshProUGUI>();
-        Handling = PartySelect.transform.Find("WeaponTab").Find("Handling").GetComponent<TextMeshProUGUI>();
-        Type = PartySelect.transform.Find("WeaponTab").Find("Type").GetComponent<TextMeshProUGUI>();
-        */
         TargetGraphic = PartySelect.transform.Find("CharacterImage").GetComponent<Image>();
-        //WeaponTargetGraphic = PartySelect.transform.Find("WeaponTab").Find("WeaponImage").GetComponent<Image>();
     }
 
     public void SetCharacter(Ally a)

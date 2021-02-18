@@ -18,7 +18,6 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
         canvas = GameObject.Find("MissionBriefingCanvas").GetComponent<Canvas>();
         canvasGroup = GetComponent<CanvasGroup>();
         slot = null;
-        Debug.Log("List: " + ListContent.name + " Canvas: " + canvas.name);
     }
 
     public void OnBeginDrag(PointerEventData eventData)

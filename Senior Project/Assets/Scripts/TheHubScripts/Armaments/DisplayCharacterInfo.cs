@@ -49,8 +49,8 @@ public class DisplayCharacterInfo : MonoBehaviour
 
         Weapon charWeapon = character.GetWeapon();
         WeaponName.text = "Name: " + charWeapon.ItemName;
-        Damage.text = "Damage: " + charWeapon.getMinDamage() + "-" + charWeapon.getMaxDamage();
-        Handling.text = "Handling: " + charWeapon.getHandling();
+        Damage.text = "Damage: " + charWeapon.GetMinDamage() + "-" + charWeapon.GetMaxDamage();
+        Handling.text = "Handling: " + charWeapon.GetHandling();
         Type.text = "Type: " + charWeapon.GetWeaponType();
         Debug.Log("Target Graphic: " + TargetGraphic.name);
         Debug.Log("Display Graphic: " + DisplayGraphic.name);

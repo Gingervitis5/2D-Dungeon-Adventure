@@ -28,7 +28,7 @@ public class RecruitmentDisplayer : MonoBehaviour
         foreach (Ally a in Recruits)
         {
             GameObject prefab;
-            switch (a.CharacterName)
+            switch (a.characterName)
             {
 
                 case "Wildlander":
@@ -48,6 +48,21 @@ public class RecruitmentDisplayer : MonoBehaviour
                     break;
                 case "Psionic":
                     prefab = GameObject.Instantiate(RecruitPrefabs[3]);
+                    prefab.GetComponent<GenerateCharacterInfo>().SetGeneratedCharacter(a);
+                    prefab.transform.SetParent(ListContent.transform);
+                    break;
+                case "Soldier":
+                    prefab = GameObject.Instantiate(RecruitPrefabs[4]);
+                    prefab.GetComponent<GenerateCharacterInfo>().SetGeneratedCharacter(a);
+                    prefab.transform.SetParent(ListContent.transform);
+                    break;
+                case "Operative":
+                    prefab = GameObject.Instantiate(RecruitPrefabs[5]);
+                    prefab.GetComponent<GenerateCharacterInfo>().SetGeneratedCharacter(a);
+                    prefab.transform.SetParent(ListContent.transform);
+                    break;
+                case "Delegate":
+                    prefab = GameObject.Instantiate(RecruitPrefabs[6]);
                     prefab.GetComponent<GenerateCharacterInfo>().SetGeneratedCharacter(a);
                     prefab.transform.SetParent(ListContent.transform);
                     break;
@@ -86,6 +101,22 @@ public class RecruitmentDisplayer : MonoBehaviour
                     NewRecruitObject.transform.SetParent(ListContent.transform);
                     Recruits.Add(NewRecruitObject.GetComponent<GenerateCharacterInfo>().GetGeneratedCharacter());
                     break;
+                case 5: //Soldier
+                    NewRecruitObject = GameObject.Instantiate(RecruitPrefabs[4]);
+                    NewRecruitObject.transform.SetParent(ListContent.transform);
+                    Recruits.Add(NewRecruitObject.GetComponent<GenerateCharacterInfo>().GetGeneratedCharacter());
+                    break;
+                case 6: //Operative
+                    NewRecruitObject = GameObject.Instantiate(RecruitPrefabs[5]);
+                    NewRecruitObject.transform.SetParent(ListContent.transform);
+                    Recruits.Add(NewRecruitObject.GetComponent<GenerateCharacterInfo>().GetGeneratedCharacter());
+                    break;
+                case 7: //Delegate
+                    NewRecruitObject = GameObject.Instantiate(RecruitPrefabs[6]);
+                    NewRecruitObject.transform.SetParent(ListContent.transform);
+                    Recruits.Add(NewRecruitObject.GetComponent<GenerateCharacterInfo>().GetGeneratedCharacter());
+                    break;
+
             }
         }
        

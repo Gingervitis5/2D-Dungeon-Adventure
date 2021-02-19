@@ -1,5 +1,8 @@
-﻿using System;
+﻿
+using System;
 using UnityEngine;
+
+
 namespace AssemblyCSharp.Assets.Scripts.Classes
 {
     public class CharacterFactory
@@ -46,6 +49,7 @@ namespace AssemblyCSharp.Assets.Scripts.Classes
         }
         public Psionic CreateNewPsionic(int brawn, int agility, int luck, int reason, int wit, int glamour)
         {
+<<<<<<< HEAD
             Psionic NewPsionic = ScriptableObject.CreateInstance<Psionic>();
             NewPsionic.SetBrawn(brawn);
             NewPsionic.SetAgility(agility);
@@ -55,6 +59,53 @@ namespace AssemblyCSharp.Assets.Scripts.Classes
             NewPsionic.SetGlamour(glamour);
             NewPsionic.characterName = "Psionic";
             return NewPsionic;
+        }
+        public Soldier CreateNewSoldier(int brawn, int agility, int luck, int reason, int wit, int glamour)
+        {
+            Soldier newSoldier = ScriptableObject.CreateInstance<Soldier>();
+            newSoldier.SetBrawn(brawn);
+            newSoldier.SetAgility(agility);
+            newSoldier.SetLuck(luck);
+            newSoldier.SetReason(reason);
+            newSoldier.SetWit(wit);
+            newSoldier.SetGlamour(glamour);
+            newSoldier.characterName = "Soldier";
+            return newSoldier;
+        }
+        public Operative CreateNewOperative(int brawn, int agility, int luck, int reason, int wit, int glamour)
+        {
+            Operative newOperative = ScriptableObject.CreateInstance<Operative>();
+            newOperative.SetBrawn(brawn);
+            newOperative.SetAgility(agility);
+            newOperative.SetLuck(luck);
+            newOperative.SetReason(reason);
+            newOperative.SetWit(wit);
+            newOperative.SetGlamour(glamour);
+            newOperative.characterName = "Operative";
+            return newOperative;
+        }
+        public Delegate CreateNewDelegate(int brawn, int agility, int luck, int reason, int wit, int glamour)
+        {
+            Delegate newDelegate = ScriptableObject.CreateInstance<Delegate>();
+            newDelegate.SetBrawn(brawn);
+            newDelegate.SetAgility(agility);
+            newDelegate.SetLuck(luck);
+            newDelegate.SetReason(reason);
+            newDelegate.SetWit(wit);
+            newDelegate.SetGlamour(glamour);
+            newDelegate.characterName = "Delegate";
+            return newDelegate;
+=======
+            Psionic NewScholar = ScriptableObject.CreateInstance<Psionic>();
+            NewScholar.SetBrawn(brawn);
+            NewScholar.SetAgility(agility);
+            NewScholar.SetLuck(luck);
+            NewScholar.SetReason(reason);
+            NewScholar.SetWit(wit);
+            NewScholar.SetGlamour(glamour);
+            NewScholar.characterName = "Psionic";
+            return NewScholar;
+>>>>>>> be95e78810f9adc1a1524b5ca21b78f2444a4a44
         }
         public Soldier CreateNewSoldier(int brawn, int agility, int luck, int reason, int wit, int glamour)
         {

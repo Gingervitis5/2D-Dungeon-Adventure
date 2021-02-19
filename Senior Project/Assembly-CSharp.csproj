@@ -57,6 +57,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="Assets\Scripts\Combat\StatusEffect\LuckBuff.cs" />
     <Compile Include="Assets\Scripts\TheHubScripts\ContextSwitcher.cs" />
     <Compile Include="Assets\Scripts\TheHubScripts\Armaments\ArmamentsContextSwitcher.cs" />
@@ -72,6 +73,20 @@
     <Compile Include="Assets\Scripts\TheHubScripts\UIHighlight.cs" />
     <Compile Include="Assets\Scripts\Classes\Combatants\Combatant.cs" />
     <Compile Include="Assets\Scripts\Combat\StatusEffect\GlamourBuff.cs" />
+=======
+    <Compile Include="Assets\Scripts\TheHubScripts\ContextSwitcher.cs" />
+    <Compile Include="Assets\Scripts\TheHubScripts\MissionBriefing\DisplayPartyInfo.cs" />
+    <Compile Include="Assets\Scripts\TheHubScripts\Armaments\ArmamentsContextSwitcher.cs" />
+    <Compile Include="Assets\Scripts\TheHubScripts\BlackMarket\DisplayWeapon.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
+    <Compile Include="Assets\Scripts\MainMenuScripts\SettingsMenu.cs" />
+    <Compile Include="Assets\Scripts\TheHubScripts\DisableOnStart.cs" />
+    <Compile Include="Assets\Scripts\TheHubScripts\MissionBriefing\MarkerSpinner.cs" />
+    <Compile Include="Assets\Scripts\PartyMasterScript.cs" />
+    <Compile Include="Assets\Scripts\TheHubScripts\BlackMarket\ExitBlackMarket.cs" />
+    <Compile Include="Assets\Scripts\TheHubScripts\UIHighlight.cs" />
+    <Compile Include="Assets\Scripts\Classes\Combatants\Combatant.cs" />
+>>>>>>> be95e78810f9adc1a1524b5ca21b78f2444a4a44
     <Compile Include="Assets\Scripts\TheHubScripts\BlackMarket\WeaponTabSwitcher.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
@@ -79,12 +94,16 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
     <Compile Include="Assets\Scripts\TheHubScripts\Armaments\RecruitCharacter.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\Scripts\Combat\StatusEffect\StatusEffect.cs" />
+=======
+>>>>>>> be95e78810f9adc1a1524b5ca21b78f2444a4a44
     <Compile Include="Assets\Scripts\MainMenuScripts\StarRandomizer.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\Scripts\Classes\Combatants\CharacterFactory.cs" />
     <Compile Include="Assets\Scripts\Classes\Items\Consumable.cs" />
     <Compile Include="Assets\Scripts\Classes\Combatants\Ally.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\Scripts\TheHubScripts\Armaments\RecruitmentRandomizer.cs" />
     <Compile Include="Assets\Scripts\MainMenuScripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\TheHubScripts\BlackMarket\PurchaseWeapon.cs" />
@@ -93,6 +112,16 @@
     <Compile Include="Assets\Scripts\Classes\Items\Weapon.cs" />
     <Compile Include="Assets\Scripts\Classes\Items\ItemFactory.cs" />
     <Compile Include="Assets\Scripts\Combat\StatusEffect\AgilityBuff.cs" />
+=======
+    <Compile Include="Assets\Scripts\MainMenuScripts\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\TheHubScripts\BlackMarket\PurchaseWeapon.cs" />
+    <Compile Include="Assets\Scripts\Classes\Combatants\Psionic.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
+    <Compile Include="Assets\Scripts\Classes\Items\Weapon.cs" />
+    <Compile Include="Assets\Scripts\TheHubScripts\MissionBriefing\DropBox.cs" />
+    <Compile Include="Assets\Scripts\Classes\Items\ItemFactory.cs" />
+>>>>>>> be95e78810f9adc1a1524b5ca21b78f2444a4a44
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
     <Compile Include="Assets\Scripts\TheHubScripts\BlackMarket\PurchaseItem.cs" />
@@ -102,12 +131,22 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\Scripts\Classes\Combatants\Psionic.cs" />
     <Compile Include="Assets\Scripts\TheHubScripts\MissionBriefing\MissionContextSwitcher.cs" />
     <Compile Include="Assets\Scripts\TheHubScripts\MissionBriefing\ResetMissionScreen.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
     <Compile Include="Assets\Scripts\Combat\StatusEffect\ReasonBuff.cs" />
     <Compile Include="Assets\Scripts\Classes\Combatants\Technician.cs" />
+=======
+    <Compile Include="Assets\Scripts\TheHubScripts\MissionBriefing\ManipulateList.cs" />
+    <Compile Include="Assets\Scripts\TheHubScripts\Armaments\RecruitmentDisplayer.cs" />
+    <Compile Include="Assets\Scripts\TheHubScripts\MissionBriefing\MissionContextSwitcher.cs" />
+    <Compile Include="Assets\Scripts\TheHubScripts\MissionBriefing\ResetMissionScreen.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
+    <Compile Include="Assets\Scripts\Classes\Combatants\Technician.cs" />
+    <Compile Include="Assets\Scripts\TheHubScripts\MissionBriefing\DragDrop.cs" />
+>>>>>>> be95e78810f9adc1a1524b5ca21b78f2444a4a44
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
     <Compile Include="Assets\Scripts\MainMenuScripts\MoonMover.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
@@ -125,23 +164,49 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
     <Compile Include="Assets\Scripts\TheHubScripts\MissionBriefing\MissionHighlight.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\Scripts\Classes\Combatants\Operative.cs" />
     <Compile Include="Assets\Scripts\TheHubScripts\BlackMarket\BlackMarketContextSwitcher.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
+=======
+    <Compile Include="Assets\Scripts\TheHubScripts\BlackMarket\BlackMarketContextSwitcher.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
+    <Compile Include="Assets\Scripts\TheHubScripts\Armaments\ExitArmaments.cs" />
+>>>>>>> be95e78810f9adc1a1524b5ca21b78f2444a4a44
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
     <Compile Include="Assets\Scripts\MainMenuScripts\PlanetRotator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\Scripts\Classes\Combatants\Delegate.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
     <Compile Include="Assets\Scripts\Classes\Items\Item.cs" />
     <Compile Include="Assets\Scripts\Classes\Combatants\Soldier.cs" />
     <Compile Include="Assets\Scripts\Combat\StatusEffect\WitBuff.cs" />
     <Compile Include="Assets\Scripts\Combat\CombatController.cs" />
+=======
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
+    <Compile Include="Assets\Scripts\Classes\Items\Item.cs" />
+>>>>>>> be95e78810f9adc1a1524b5ca21b78f2444a4a44
     <Compile Include="Assets\Scripts\TheHubScripts\ControlPanel.cs" />
     <Compile Include="Assets\Scripts\TheHubScripts\Armaments\GenerateCharacterInfo.cs" />
     <Compile Include="Assets\Scripts\Classes\Combatants\Wildlander.cs" />
     <Compile Include="Assets\Scripts\InventoryMasterScript.cs" />
+<<<<<<< HEAD
+=======
+    <Compile Include="Assets\Scripts\Combat\StatusEffect\LuckBuff.cs" />
+    <Compile Include="Assets\Scripts\Combat\StatusEffect\BrawnBuff.cs" />
+    <Compile Include="Assets\Scripts\Combat\StatusEffect\StatBuff.cs" />
+    <Compile Include="Assets\Scripts\Combat\StatusEffect\GlamourBuff.cs" />
+    <Compile Include="Assets\Scripts\Combat\StatusEffect\StatusEffect.cs" />
+    <Compile Include="Assets\Scripts\Combat\StatusEffect\AgilityBuff.cs" />
+    <Compile Include="Assets\Scripts\Combat\StatusEffect\ReasonBuff.cs" />
+    <Compile Include="Assets\Scripts\Combat\StatusEffect\WitBuff.cs" />
+    <Compile Include="Assets\Scripts\Combat\CombatController.cs" />
+    <Compile Include="Assets\Scripts\Classes\Combatants\Soldier.cs" />
+    <Compile Include="Assets\Scripts\Classes\Combatants\Delegate.cs" />
+    <Compile Include="Assets\Scripts\Classes\Combatants\Operative.cs" />
+>>>>>>> be95e78810f9adc1a1524b5ca21b78f2444a4a44
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
@@ -167,6 +232,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
     <Reference Include="Unity.Timeline.Editor">
+<<<<<<< HEAD
       <HintPath>D:/SeniorProject/2D-Dungeon-Adventure/Senior Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
@@ -195,6 +261,36 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>D:/SeniorProject/2D-Dungeon-Adventure/Senior Project/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+=======
+      <HintPath>D:/GitHub/2D-Adventure_Dungeon/2D-Dungeon-Adventure/Senior Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+      <HintPath>D:/GitHub/2D-Adventure_Dungeon/2D-Dungeon-Adventure/Senior Project/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>D:/GitHub/2D-Adventure_Dungeon/2D-Dungeon-Adventure/Senior Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>D:/GitHub/2D-Adventure_Dungeon/2D-Dungeon-Adventure/Senior Project/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+      <HintPath>D:/GitHub/2D-Adventure_Dungeon/2D-Dungeon-Adventure/Senior Project/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+      <HintPath>D:/GitHub/2D-Adventure_Dungeon/2D-Dungeon-Adventure/Senior Project/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>D:/GitHub/2D-Adventure_Dungeon/2D-Dungeon-Adventure/Senior Project/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualStudio.Editor">
+      <HintPath>D:/GitHub/2D-Adventure_Dungeon/2D-Dungeon-Adventure/Senior Project/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>D:/GitHub/2D-Adventure_Dungeon/2D-Dungeon-Adventure/Senior Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>D:/GitHub/2D-Adventure_Dungeon/2D-Dungeon-Adventure/Senior Project/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+>>>>>>> be95e78810f9adc1a1524b5ca21b78f2444a4a44
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>D:/Unity/2020.1.3f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

@@ -4,6 +4,14 @@
       <File FileName="Assets/Scripts/TheHubScripts/Armaments/DisplayCharacterInfo.cs" Line="42" Column="55" />
       <File FileName="Assets/Scripts/TheHubScripts/Armaments/GenerateCharacterInfo.cs" Line="54" Column="64" />
       <File FileName="Assets/Scripts/TheHubScripts/Armaments/RecruitCharacter.cs" Line="30" Column="44" />
+﻿<Properties StartupConfiguration="{25123671-DE14-B5AC-A4A4-5268D0396AF6}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/TheHubScripts/BlackMarket/PurchaseItem.cs">
+    <Files>
+      <File FileName="Assets/Scripts/TheHubScripts/BlackMarket/PurchaseWeapon.cs" Line="80" Column="21" />
+      <File FileName="Assets/Scripts/TheHubScripts/BlackMarket/PurchaseItem.cs" Line="86" Column="83" />
+      <File FileName="Assets/Scripts/Classes/Items/Item.cs" Line="9" Column="29" />
+      <File FileName="Assets/Scripts/Classes/Items/ItemFactory.cs" Line="17" Column="50" />
+      <File FileName="Assets/Scripts/TheHubScripts/Armaments/RecruitCharacter.cs" Line="31" Column="78" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -22,6 +30,7 @@
                     </Node>
                     <Node name="BlackMarket" expanded="True" />
                   </Node>
+                  <Node name="MissionBriefing" expanded="True" />
                 </Node>
               </Node>
             </Node>

@@ -32,17 +32,3 @@ ehthumbs.db
 sysinfo.txt
 *.stackdump
 
-*.xml
-*.cache
-Senior Project/Library/ArtifactDB
-CurrentLayout-default.dwlt
-EditorInstance.json
-InspectorExpandedItems.asset
-ProjectCache.bin
-SceneVisibilityState.asset
-Assembly-CSharp.dll
-Assembly-CSharp.pdb
-EditorEncounteredVariants
-*.backup
-SourceAssetDB
-SourceAssetDB-lock

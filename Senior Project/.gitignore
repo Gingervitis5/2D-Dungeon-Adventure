@@ -1,0 +1,9 @@
+$ cat .gitignore
+*.xml
+*.bin
+*.dwlt
+*.asset
+*.dll
+*.pdb
+*.json
+*.cache

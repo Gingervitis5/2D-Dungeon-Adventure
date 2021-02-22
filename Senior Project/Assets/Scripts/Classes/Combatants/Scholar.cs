@@ -5,4 +5,5 @@ using UnityEngine;
 public class Scholar : Ally
 {
     public Sprite sprite;
+
 }

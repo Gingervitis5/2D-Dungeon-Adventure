@@ -5,15 +5,10 @@ using UnityEngine;
 public class PartyMasterScript : MonoBehaviour
 {
     private List<Ally> Characters = new List<Ally>();
-<<<<<<< HEAD
-    public GameObject ListContent;
-    public GameObject WildlanderPrefab, TechnicianPrefab, ScholarPrefab;
-=======
     private static List<Ally> Party = new List<Ally>();
     public GameObject RecruitListContent, PartyListContent;
     public GameObject[] RecruitPrefabs;
     public GameObject[] DraggablePrefabs;
->>>>>>> be95e78810f9adc1a1524b5ca21b78f2444a4a44
 
     public static List<Ally> GetAllies()
     {
@@ -25,7 +20,7 @@ public class PartyMasterScript : MonoBehaviour
         Party.Add(ally);
         foreach(Ally a in Party)
         {
-            Debug.Log("Party Member: " + a.characterName);
+            Debug.Log("Party Member: " + a.CharacterName);
         }
     }
 
@@ -34,64 +29,45 @@ public class PartyMasterScript : MonoBehaviour
         Party.Remove(ally);
         foreach (Ally a in Party)
         {
-            Debug.Log("Party Member: " + a.characterName);
+            Debug.Log("Party Member: " + a.CharacterName);
         }
     }
 
     public void RecruitCharacter(Ally recruit)
     {
         Characters.Add(recruit);
-        Debug.Log("Recruited: " + recruit.characterName);
+        //Debug.Log("Recruited: " + recruit.CharacterName);
         /*foreach(Ally a in Characters)
         {
             Debug.Log(a.CharacterName);
         }*/
     }
 
-    public void DisplayPartyMembers()
+    public void DisplayRecruitedMembers()
     {
         foreach(Ally a in Characters)
         {
             GameObject prefab;
-            switch (a.characterName)
+            switch (a.CharacterName)
             {
+               
                 case "Wildlander":
-                    prefab = GameObject.Instantiate(WildlanderPrefab);
+                    prefab = GameObject.Instantiate(RecruitPrefabs[0]);
                     prefab.GetComponent<DisplayCharacterInfo>().SetCharacter(a);
-                    prefab.transform.SetParent(ListContent.transform);
+                    prefab.transform.SetParent(RecruitListContent.transform);
                     break;
                 case "Technician":
-                    prefab = GameObject.Instantiate(TechnicianPrefab);
+                    prefab = GameObject.Instantiate(RecruitPrefabs[1]);
                     prefab.GetComponent<DisplayCharacterInfo>().SetCharacter(a);
-                    prefab.transform.SetParent(ListContent.transform);
+                    prefab.transform.SetParent(RecruitListContent.transform);
                     break;
                 case "Scholar":
-                    prefab = GameObject.Instantiate(ScholarPrefab);
+                    prefab = GameObject.Instantiate(RecruitPrefabs[2]);
                     prefab.GetComponent<DisplayCharacterInfo>().SetCharacter(a);
-                    prefab.transform.SetParent(ListContent.transform);
+                    prefab.transform.SetParent(RecruitListContent.transform);
                     break;
                 case "Psionic":
-                    prefab = GameObject.Instantiate(ScholarPrefab);
-                    prefab.GetComponent<DisplayCharacterInfo>().SetCharacter(a);
-                    prefab.transform.SetParent(ListContent.transform);
-                    break;
-                case "Soldier":
-<<<<<<< HEAD
-                    prefab = GameObject.Instantiate(ScholarPrefab);
-                    prefab.GetComponent<DisplayCharacterInfo>().SetCharacter(a);
-                    prefab.transform.SetParent(ListContent.transform);
-=======
-                    prefab = GameObject.Instantiate(RecruitPrefabs[4]);
-                    prefab.GetComponent<DisplayCharacterInfo>().SetCharacter(a);
-                    prefab.transform.SetParent(RecruitListContent.transform);
-                    break;
-                case "Operative":
-                    prefab = GameObject.Instantiate(RecruitPrefabs[5]);
-                    prefab.GetComponent<DisplayCharacterInfo>().SetCharacter(a);
-                    prefab.transform.SetParent(RecruitListContent.transform);
-                    break;
-                case "Delegate":
-                    prefab = GameObject.Instantiate(RecruitPrefabs[6]);
+                    prefab = GameObject.Instantiate(RecruitPrefabs[3]);
                     prefab.GetComponent<DisplayCharacterInfo>().SetCharacter(a);
                     prefab.transform.SetParent(RecruitListContent.transform);
                     break;
@@ -104,7 +80,7 @@ public class PartyMasterScript : MonoBehaviour
         foreach (Ally a in Characters)
         {
             GameObject prefab;
-            switch (a.characterName)
+            switch (a.CharacterName)
             {
 
                 case "Wildlander":
@@ -118,30 +94,15 @@ public class PartyMasterScript : MonoBehaviour
                     prefab = GameObject.Instantiate(DraggablePrefabs[1]);
                     prefab.GetComponent<DisplayPartyInfo>().SetCharacter(a);
                     prefab.transform.SetParent(PartyListContent.transform);
->>>>>>> be95e78810f9adc1a1524b5ca21b78f2444a4a44
                     break;
-                case "Operative":
-                    prefab = GameObject.Instantiate(ScholarPrefab);
-                    prefab.GetComponent<DisplayCharacterInfo>().SetCharacter(a);
-                    prefab.transform.SetParent(ListContent.transform);
-                    break;
-                case "Delegate":
-                    prefab = GameObject.Instantiate(ScholarPrefab);
-                    prefab.GetComponent<DisplayCharacterInfo>().SetCharacter(a);
-                    prefab.transform.SetParent(ListContent.transform);
-                    break;
-                case "Soldier":
-                    prefab = GameObject.Instantiate(DraggablePrefabs[4]);
+                case "Scholar":
+                    Debug.Log("Display Scholar");
+                    prefab = GameObject.Instantiate(DraggablePrefabs[2]);
                     prefab.GetComponent<DisplayPartyInfo>().SetCharacter(a);
                     prefab.transform.SetParent(PartyListContent.transform);
                     break;
-                case "Operative":
-                    prefab = GameObject.Instantiate(DraggablePrefabs[5]);
-                    prefab.GetComponent<DisplayPartyInfo>().SetCharacter(a);
-                    prefab.transform.SetParent(PartyListContent.transform);
-                    break;
-                case "Delegate":
-                    prefab = GameObject.Instantiate(DraggablePrefabs[6]);
+                case "Psionic":
+                    prefab = GameObject.Instantiate(DraggablePrefabs[3]);
                     prefab.GetComponent<DisplayPartyInfo>().SetCharacter(a);
                     prefab.transform.SetParent(PartyListContent.transform);
                     break;

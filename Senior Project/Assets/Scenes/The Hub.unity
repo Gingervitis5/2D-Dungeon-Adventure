@@ -2372,8 +2372,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.041731715, y: 0.627478}
   m_AnchorMax: {x: 0.19667467, y: 0.8746545}
-  m_AnchoredPosition: {x: 2.8000488, y: -1.0879974}
-  m_SizeDelta: {x: -81.49834, y: -169.86496}
+  m_AnchoredPosition: {x: -2.5999756, y: -5.8}
+  m_SizeDelta: {x: -34.73044, y: -168.56436}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &194583787
 MonoBehaviour:
@@ -6966,7 +6966,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.23600002, y: 0.016}
   m_AnchorMax: {x: 0.411, y: 0.0856555}
-  m_AnchoredPosition: {x: -8.700012, y: -9.799988}
+  m_AnchoredPosition: {x: -8.700027, y: -9.799988}
   m_SizeDelta: {x: 17, y: -2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &730895528
@@ -7847,7 +7847,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TargetGraphic: {fileID: 703671047}
-  DisplayGraphic: {fileID: 21300000, guid: e8694903fdd654ecf9847d0ae9cf2beb, type: 3}
+  DisplayGraphic: {fileID: 21300000, guid: 67994e20d80714f7ca6055b42211db02, type: 3}
   Name: {fileID: 1487590727}
   Damage: {fileID: 38411455}
   Range: {fileID: 1251441486}
@@ -7926,7 +7926,7 @@ MonoBehaviour:
         m_MethodName: SetWeaponSprite
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 21300000, guid: e8694903fdd654ecf9847d0ae9cf2beb, type: 3}
+          m_ObjectArgument: {fileID: 21300000, guid: 67994e20d80714f7ca6055b42211db02, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -10934,7 +10934,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.22800002, y: 0.416}
   m_AnchorMax: {x: 0.41439027, y: 0.8074391}
-  m_AnchoredPosition: {x: 4.799988, y: -0.44708252}
+  m_AnchoredPosition: {x: 4.8000107, y: -0.44708252}
   m_SizeDelta: {x: -37.32068, y: -38.894226}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1307684303
@@ -12256,18 +12256,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1461958002}
-        m_TargetAssemblyTypeName: ManipulateList, Assembly-CSharp
-        m_MethodName: DisplayAvailableMembers
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1461957999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13196,10 +13184,10 @@ RectTransform:
   m_Father: {fileID: 176063500}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.05}
-  m_AnchorMin: {x: 0.041731715, y: 0.627478}
-  m_AnchorMax: {x: 0.1753695, y: 0.86200005}
-  m_AnchoredPosition: {x: 10.5, y: 0.5}
-  m_SizeDelta: {x: -107.8974, y: -81.423096}
+  m_AnchorMin: {x: 0.034238525, y: 0.6177928}
+  m_AnchorMax: {x: 0.19667467, y: 0.8746545}
+  m_AnchoredPosition: {x: -4, y: 3}
+  m_SizeDelta: {x: -123.2822, y: -98.3701}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1564863000
 MonoBehaviour:

@@ -32,11 +32,14 @@ public class MinimapBuilder : MonoBehaviour
                 {
                     GameObject g = new GameObject();
                     //689, 387
-                    g.transform.position = new Vector3(r * 10, c * -10);
+                    //g.transform.position = new Vector3(r * 10, c * -10);
+                    g.transform.position = new Vector3((minimapParent.transform.position.x) +(r * 30),(minimapParent.transform.position.y) + ( c * -30));
                     var spriteRen = g.AddComponent<SpriteRenderer>();
                     spriteRen.sprite = roomSprite;
-                    spriteRen.sortingOrder = -10;
+                    spriteRen.sortingOrder = 100;
+                   
                     g.transform.SetParent(minimapParent.transform);
+                    g.transform.localScale = new Vector3(3f, 3f, 3f);
                     minimap[r, c] = g;
                 }
                 

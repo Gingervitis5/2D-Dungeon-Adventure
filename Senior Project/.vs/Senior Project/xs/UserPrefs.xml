@@ -1,3 +1,9 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/TheHubScripts/Armaments/DisplayCharacterInfo.cs">
+    <Files>
+      <File FileName="Assets/Scripts/TheHubScripts/Armaments/DisplayCharacterInfo.cs" Line="42" Column="55" />
+      <File FileName="Assets/Scripts/TheHubScripts/Armaments/GenerateCharacterInfo.cs" Line="54" Column="64" />
+      <File FileName="Assets/Scripts/TheHubScripts/Armaments/RecruitCharacter.cs" Line="30" Column="44" />
 ﻿<Properties StartupConfiguration="{25123671-DE14-B5AC-A4A4-5268D0396AF6}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/TheHubScripts/Armaments/DisplayCharacterInfo.cs">
     <Files>
@@ -10,14 +16,40 @@
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
+<<<<<<< HEAD
+          <Node name="Senior Project" expanded="True">
+            <Node name="Assembly-CSharp" expanded="True">
+              <Node name="Assets" expanded="True">
+                <Node name="Scripts" expanded="True">
+                  <Node name="Classes" expanded="True">
+                    <Node name="Combatants" expanded="True" />
+                    <Node name="Items" expanded="True" />
+                  </Node>
+                  <Node name="TheHubScripts" expanded="True">
+                    <Node name="Armaments" expanded="True">
+                      <Node name="DisplayCharacterInfo.cs" selected="True" />
+                    </Node>
+                    <Node name="BlackMarket" expanded="True" />
+                  </Node>
+                  <Node name="MissionBriefing" expanded="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+=======
           <Node name="Senior Project" expanded="True" selected="True" />
+>>>>>>> master
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+<<<<<<< HEAD
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="d35d9b58-290b-4b9a-b1b1-e3171694a925" />
+=======
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="cbea02dc-c655-4a32-a95a-cd4250817e1b" />
+>>>>>>> master
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

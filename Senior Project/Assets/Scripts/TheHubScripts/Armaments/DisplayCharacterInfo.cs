@@ -11,10 +11,12 @@ public class DisplayCharacterInfo : MonoBehaviour
     private TextMeshProUGUI Level, Brawn, Agility, Luck, Reason, Wit, Glamour;
     private TextMeshProUGUI WeaponName, Damage, Handling, Type;
     private GameObject PartyMemberPage;
+    private Canvas ArmamentsCanvas;
 
     public void Awake()
     {
-        PartyMemberPage = GameObject.FindGameObjectWithTag("Party Member Page");
+        ArmamentsCanvas = GameObject.Find("ArmamentsCanvas").GetComponent<Canvas>();
+        PartyMemberPage = ArmamentsCanvas.transform.Find("PartyMemberPage").gameObject;
         Level = PartyMemberPage.transform.Find("Level").GetComponent<TextMeshProUGUI>();
         Brawn = PartyMemberPage.transform.Find("Brawn").GetComponent<TextMeshProUGUI>();
         Agility = PartyMemberPage.transform.Find("Agility").GetComponent<TextMeshProUGUI>();

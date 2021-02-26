@@ -22,7 +22,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8241146251781050896, guid: 20810336d9731495d8d2f6b754eac238, type: 3}
       propertyPath: m_Name
-      value: WildlanderMember
+      value: PsionicMember
       objectReference: {fileID: 0}
     - target: {fileID: 8241146251781050897, guid: 20810336d9731495d8d2f6b754eac238, type: 3}
       propertyPath: m_LocalPosition.x
@@ -78,11 +78,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8241146251781050897, guid: 20810336d9731495d8d2f6b754eac238, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 103.91682
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 8241146251781050897, guid: 20810336d9731495d8d2f6b754eac238, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 103.91681
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 8241146251781050897, guid: 20810336d9731495d8d2f6b754eac238, type: 3}
       propertyPath: m_AnchorMin.x

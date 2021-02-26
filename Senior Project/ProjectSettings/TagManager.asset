@@ -8,6 +8,7 @@ TagManager:
   - Party Member Page
   - Party Select
   - Party Master
+  - Party Content
   layers:
   - Default
   - TransparentFX

@@ -65,11 +65,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2044617448295009838, guid: c40424f46848c4371a5a42cc0c6b03e4, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 103.91682
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 2044617448295009838, guid: c40424f46848c4371a5a42cc0c6b03e4, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 103.91681
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 2044617448295009838, guid: c40424f46848c4371a5a42cc0c6b03e4, type: 3}
       propertyPath: m_AnchorMin.x
@@ -97,7 +97,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2044617448295009839, guid: c40424f46848c4371a5a42cc0c6b03e4, type: 3}
       propertyPath: m_Name
-      value: TechnicianMember
+      value: ScholarMember
       objectReference: {fileID: 0}
     - target: {fileID: 3261812723495324114, guid: c40424f46848c4371a5a42cc0c6b03e4, type: 3}
       propertyPath: DisplayGraphic

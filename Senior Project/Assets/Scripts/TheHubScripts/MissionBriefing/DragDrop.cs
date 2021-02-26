@@ -14,7 +14,8 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
-        ListContent = GameObject.Find("PartyContent");
+        //Piece of shit Unity not finding ListContent, fix plz
+        Debug.Log(ListContent);
         canvas = GameObject.Find("MissionBriefingCanvas").GetComponent<Canvas>();
         canvasGroup = GetComponent<CanvasGroup>();
         slot = null;
@@ -54,6 +55,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
             }
         }
         if (!hit) {
+            ListContent = GameObject.Find("PartyContent");
             this.gameObject.transform.SetParent(ListContent.transform);
             PartyMasterScript.RemovePartyMember(GetComponent<DisplayPartyInfo>().GetCharacter());
         }

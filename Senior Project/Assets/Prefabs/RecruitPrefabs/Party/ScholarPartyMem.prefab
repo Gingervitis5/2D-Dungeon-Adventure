@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 573238702549580756, guid: a97f50ca01d2d4af98b636d184be311b, type: 3}
       propertyPath: m_Name
-      value: ScholarParty
+      value: ScholarPartyMem
       objectReference: {fileID: 0}
     - target: {fileID: 573238702549580757, guid: a97f50ca01d2d4af98b636d184be311b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -65,11 +65,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 573238702549580757, guid: a97f50ca01d2d4af98b636d184be311b, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 103.91682
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 573238702549580757, guid: a97f50ca01d2d4af98b636d184be311b, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 103.91681
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 573238702549580757, guid: a97f50ca01d2d4af98b636d184be311b, type: 3}
       propertyPath: m_AnchorMin.x

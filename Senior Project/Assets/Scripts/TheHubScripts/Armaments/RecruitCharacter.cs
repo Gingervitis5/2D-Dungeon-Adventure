@@ -27,7 +27,6 @@ public class RecruitCharacter : MonoBehaviour
     {
         if (CharacterToRecruit != null)
         {
-            //Debug.Log(CharacterToRecruit.CharacterName);
             CharacterToRecruit.SetWeapon(itemFactory.CreateNewWeapon("BCR-SI"));
             CharacterToRecruit.GetWeapon().SetStats(14, 8, 6, 5, 10, 25);
             CharacterToRecruit.GetWeapon().SetWeaponType("Assault Rifle");

@@ -15,7 +15,7 @@ public class DropBox : MonoBehaviour, IDropHandler
         {
             if (slottedCharacter != null && slottedCharacter != eventData.pointerDrag) {
                 slottedCharacter.transform.SetParent(ListContent.transform);
-                if (PartyMasterScript.GetAllies().Contains(slottedCharacter.GetComponent<DisplayPartyInfo>().GetCharacter()))
+                if (PartyMasterScript.GetParty().Contains(slottedCharacter.GetComponent<DisplayPartyInfo>().GetCharacter()))
                 {
                     PartyMasterScript.RemovePartyMember(slottedCharacter.GetComponent<DisplayPartyInfo>().GetCharacter());
                 }
@@ -31,5 +31,10 @@ public class DropBox : MonoBehaviour, IDropHandler
     public void SetSlottedCharacter(GameObject character)
     {
         slottedCharacter = character;
+    }
+
+    public GameObject GetSlottedCharacter()
+    {
+        return slottedCharacter;
     }
 }

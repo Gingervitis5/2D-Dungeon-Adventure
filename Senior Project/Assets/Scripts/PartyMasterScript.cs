@@ -10,7 +10,12 @@ public class PartyMasterScript : MonoBehaviour
     public GameObject[] RecruitPrefabs;
     public GameObject[] DraggablePrefabs;
 
-    public static List<Ally> GetAllies()
+    public void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
+
+    public static List<Ally> GetParty()
     {
         return Party;
     }
@@ -20,26 +25,27 @@ public class PartyMasterScript : MonoBehaviour
         Party.Add(ally);
         foreach(Ally a in Party)
         {
-            Debug.Log("Party Member: " + a.CharacterName);
+            Debug.Log("Party Member: " + a.characterName);
         }
     }
 
     public static void RemovePartyMember(Ally ally)
     {
         Party.Remove(ally);
+        Debug.Log("Removing: " + ally.GetCharacterName());
         foreach (Ally a in Party)
         {
-            Debug.Log("Party Member: " + a.CharacterName);
+            Debug.Log("Party Member: " + a.characterName);
         }
     }
 
     public void RecruitCharacter(Ally recruit)
     {
         Characters.Add(recruit);
-        //Debug.Log("Recruited: " + recruit.CharacterName);
+        //Debug.Log("Recruited: " + recruit.characterName);
         /*foreach(Ally a in Characters)
         {
-            Debug.Log(a.CharacterName);
+            Debug.Log(a.characterName);
         }*/
     }
 
@@ -48,7 +54,7 @@ public class PartyMasterScript : MonoBehaviour
         foreach(Ally a in Characters)
         {
             GameObject prefab;
-            switch (a.CharacterName)
+            switch (a.characterName)
             {
                
                 case "Wildlander":
@@ -71,6 +77,11 @@ public class PartyMasterScript : MonoBehaviour
                     prefab.GetComponent<DisplayCharacterInfo>().SetCharacter(a);
                     prefab.transform.SetParent(RecruitListContent.transform);
                     break;
+                case "Soldier":
+                    prefab = GameObject.Instantiate(RecruitPrefabs[4]);
+                    prefab.GetComponent<DisplayCharacterInfo>().SetCharacter(a);
+                    prefab.transform.SetParent(RecruitListContent.transform);
+                    break;
             }
         }
     }
@@ -80,29 +91,31 @@ public class PartyMasterScript : MonoBehaviour
         foreach (Ally a in Characters)
         {
             GameObject prefab;
-            switch (a.CharacterName)
+            switch (a.characterName)
             {
 
                 case "Wildlander":
-                    Debug.Log("Display Wildlander");
                     prefab = GameObject.Instantiate(DraggablePrefabs[0]);
                     prefab.GetComponent<DisplayPartyInfo>().SetCharacter(a);
                     prefab.transform.SetParent(PartyListContent.transform);
                     break;
                 case "Technician":
-                    Debug.Log("Display Technician");
                     prefab = GameObject.Instantiate(DraggablePrefabs[1]);
                     prefab.GetComponent<DisplayPartyInfo>().SetCharacter(a);
                     prefab.transform.SetParent(PartyListContent.transform);
                     break;
                 case "Scholar":
-                    Debug.Log("Display Scholar");
                     prefab = GameObject.Instantiate(DraggablePrefabs[2]);
                     prefab.GetComponent<DisplayPartyInfo>().SetCharacter(a);
                     prefab.transform.SetParent(PartyListContent.transform);
                     break;
                 case "Psionic":
                     prefab = GameObject.Instantiate(DraggablePrefabs[3]);
+                    prefab.GetComponent<DisplayPartyInfo>().SetCharacter(a);
+                    prefab.transform.SetParent(PartyListContent.transform);
+                    break;
+                case "Soldier":
+                    prefab = GameObject.Instantiate(DraggablePrefabs[4]);
                     prefab.GetComponent<DisplayPartyInfo>().SetCharacter(a);
                     prefab.transform.SetParent(PartyListContent.transform);
                     break;

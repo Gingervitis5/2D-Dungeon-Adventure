@@ -28,7 +28,7 @@ public class RecruitmentDisplayer : MonoBehaviour
         foreach (Ally a in Recruits)
         {
             GameObject prefab;
-            switch (a.CharacterName)
+            switch (a.characterName)
             {
 
                 case "Wildlander":
@@ -51,18 +51,23 @@ public class RecruitmentDisplayer : MonoBehaviour
                     prefab.GetComponent<GenerateCharacterInfo>().SetGeneratedCharacter(a);
                     prefab.transform.SetParent(ListContent.transform);
                     break;
+                case "Soldier":
+                    prefab = GameObject.Instantiate(RecruitPrefabs[4]);
+                    prefab.GetComponent<GenerateCharacterInfo>().SetGeneratedCharacter(a);
+                    prefab.transform.SetParent(ListContent.transform);
+                    break;
             }
         }
     }
 
     public void RandomizeRecruits()
     {
-        int NumRecruits = Random.Range(3, 7);
+        int NumRecruits = Random.Range(4, 7);
         int RecruitType;
         for (int i = 1; i <= NumRecruits && !HasRandomized; i++)
         {
-            RecruitType = Random.Range(1, 5);
-            //RecruitType = 1;
+            RecruitType = Random.Range(1, 6);
+            //RecruitType = 5;
             GameObject NewRecruitObject;
             switch (RecruitType)
             {
@@ -83,6 +88,11 @@ public class RecruitmentDisplayer : MonoBehaviour
                     break;
                 case 4: //Psionic
                     NewRecruitObject = GameObject.Instantiate(RecruitPrefabs[3]);
+                    NewRecruitObject.transform.SetParent(ListContent.transform);
+                    Recruits.Add(NewRecruitObject.GetComponent<GenerateCharacterInfo>().GetGeneratedCharacter());
+                    break;
+                case 5: //Soldier
+                    NewRecruitObject = GameObject.Instantiate(RecruitPrefabs[4]);
                     NewRecruitObject.transform.SetParent(ListContent.transform);
                     Recruits.Add(NewRecruitObject.GetComponent<GenerateCharacterInfo>().GetGeneratedCharacter());
                     break;

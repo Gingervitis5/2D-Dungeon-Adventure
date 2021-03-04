@@ -17,7 +17,6 @@ public class DisplayPartyInfo : MonoBehaviour
     {
         MBCanvas = GameObject.Find("MissionBriefingCanvas").GetComponent<Canvas>();
         PartySelect = MBCanvas.transform.Find("Party Select").gameObject;
-        Debug.Log(PartySelect);
         Level = PartySelect.transform.Find("Level").GetComponent<TextMeshProUGUI>();
         Brawn = PartySelect.transform.Find("Brawn").GetComponent<TextMeshProUGUI>();
         Agility = PartySelect.transform.Find("Agility").GetComponent<TextMeshProUGUI>();

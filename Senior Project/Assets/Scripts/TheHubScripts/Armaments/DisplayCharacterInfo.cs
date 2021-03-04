@@ -54,8 +54,6 @@ public class DisplayCharacterInfo : MonoBehaviour
         Damage.text = "Damage: " + charWeapon.getMinDamage() + "-" + charWeapon.getMaxDamage();
         Handling.text = "Handling: " + charWeapon.getHandling();
         Type.text = "Type: " + charWeapon.GetWeaponType();
-        Debug.Log("Target Graphic: " + TargetGraphic.name);
-        Debug.Log("Display Graphic: " + DisplayGraphic.name);
         TargetGraphic.sprite = DisplayGraphic;
         TargetGraphic.color = new Color(255, 255, 255, 255);
         WeaponTargetGraphic.sprite = charWeapon.ItemImage;

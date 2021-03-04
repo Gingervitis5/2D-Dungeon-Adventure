@@ -19,7 +19,6 @@ public class ArmamentsContextSwitcher : MonoBehaviour
         switch (Pages[0].activeSelf)
         {
             case true:
-                Debug.Log("Switch to party");
                 Pages[0].SetActive(false);
                 Pages[1].SetActive(true);
                 WindowPage.sprite = Graphics[1];
@@ -27,7 +26,6 @@ public class ArmamentsContextSwitcher : MonoBehaviour
                 PartyMaster.GetComponent<PartyMasterScript>().DisplayRecruitedMembers();
                 break;
             case false:
-                Debug.Log("Switch to recruit");
                 Pages[0].SetActive(true);
                 Pages[1].SetActive(false);
                 DestroyChildren();

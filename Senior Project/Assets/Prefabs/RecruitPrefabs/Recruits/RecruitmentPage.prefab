@@ -803,8 +803,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 129ebf15722d14ff9b110a1d592dac76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PartyMaster: {fileID: 0}
+  partyMaster: {fileID: 0}
   BCRSI: {fileID: 21300000, guid: a6c67d743ca4244adaa038010430fa8c, type: 3}
+  characterImage: {fileID: 642857651407926534}
+  brawnText: {fileID: 642857651890841951}
+  agilityText: {fileID: 642857650737732769}
+  luckText: {fileID: 642857650563545481}
+  reasonText: {fileID: 642857651848284806}
+  witText: {fileID: 642857650917817587}
+  GlamourText: {fileID: 642857650333014375}
+  classText: {fileID: 642857651705760296}
 --- !u!1 &642857651407926532
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,7 +10,7 @@ public class PartyMasterScript : MonoBehaviour
     public GameObject[] RecruitPrefabs;
     public GameObject[] DraggablePrefabs;
 
-    public void Awake()
+    void Awake()
     {
         DontDestroyOnLoad(gameObject);
     }
@@ -23,30 +23,17 @@ public class PartyMasterScript : MonoBehaviour
     public static void AddPartyMember(Ally ally)
     {
         Party.Add(ally);
-        foreach(Ally a in Party)
-        {
-            Debug.Log("Party Member: " + a.characterName);
-        }
     }
 
     public static void RemovePartyMember(Ally ally)
     {
         Party.Remove(ally);
         Debug.Log("Removing: " + ally.GetCharacterName());
-        foreach (Ally a in Party)
-        {
-            Debug.Log("Party Member: " + a.characterName);
-        }
     }
 
     public void RecruitCharacter(Ally recruit)
     {
         Characters.Add(recruit);
-        //Debug.Log("Recruited: " + recruit.characterName);
-        /*foreach(Ally a in Characters)
-        {
-            Debug.Log(a.characterName);
-        }*/
     }
 
     public void DisplayRecruitedMembers()

@@ -1,40 +1,41 @@
 ﻿using System;
+using UnityEngine.UI;
+using UnityEngine;
+
 public class Technician : Ally
 {
-    /*public Technician(int health,
-                      int healthMax,
-                      int shield,
-                      int shieldMax,
-                      int initiative,
-                      int brawn,
-                      int agility,
-                      int luck,
-                      int reason,
-                      int wit,
-                      int glamour,
-                      double aim,
-                      double critChance,
-                      double critMultiplier,
-                      double dodge,
-                      int level,
-                      int exp,
-                      int nextExp)
+    public Sprite sprite;
+    protected string skillOneType = "AllySingleBuff";
+    protected string skillTwoType = "";
+    protected string skillThreeType = "";
+    protected string skillFourType = "";
+
+    public void SkillOne(Combatant c)
     {
-        Health = health;
-        HealthMax = healthMax;
-        Shield = shield;
-        ShieldMax = shieldMax;
-        Initiative = initiative;
-        Brawn = brawn;
-        Agility = agility;
-        Luck = luck;
-        Reason = reason;
-        Wit = wit;
-        Glamour = glamour;
-        Aim = aim;
-        CritChance = critChance;
-        CritMultiplier = critMultiplier;
-        Dodge = dodge;
-        Level = level;
-    }*/
+        //Apply SE to increase c's Max Health and Shields
+        c.SetHealth(c.GetHealth() + 30);
+        c.SetShield(c.GetShield() + 30);
+    }
+    public void SkillTwo()
+    {
+
+    }
+    public void SkillThree()
+    {
+
+    }
+    public void SkillFour()
+    {
+
+    }
+
+    public string getSkillOneType() { return this.skillOneType; }
+    public string getSkillTwoType() { return this.skillTwoType; }
+    public string getSkillThreeType() { return this.skillThreeType; }
+    public string getSkillFourType() { return this.skillFourType; }
+
+    public void setSkillOneType(string s) { this.skillOneType = s; }
+    public void setSkillTwoType(string s) { this.skillTwoType = s; }
+    public void setSkillThreeType(string s) { this.skillThreeType = s; }
+    public void setSkillFourType(string s) { this.skillFourType = s; }
 }

@@ -1,5 +1,6 @@
-﻿using System;
+﻿//using System;
 using UnityEngine;
+
 public abstract class Combatant : ScriptableObject
 {
     protected int health, healthMax, shield, shieldMax, initiative;
@@ -10,7 +11,7 @@ public abstract class Combatant : ScriptableObject
     public Sprite characterImage;
     public string charClass;
 
-    /*public double Attack(Combatant c)
+    public double Attack(Combatant c)
     {
         Weapon w = c.GetWeapon();
         double cChance = c.GetCritChance() + w.GetCritChance(), critMult = c.GetCritMultiplier() + w.GetCritMultiplier();
@@ -32,7 +33,7 @@ public abstract class Combatant : ScriptableObject
         }
         Debug.Log("Damage: " + damage);
         return damage;
-    }*/
+    }
 
 
     public int GetBrawn() { return this.brawn; }

@@ -13,17 +13,19 @@ public class StartMission : MonoBehaviour
         bool promising = true;
         foreach (GameObject g in DropBoxes)
         {
-            if (g.GetComponent<DropBox>().GetSlottedCharacter() == null) { promising = false; }
+            if (g.GetComponent<DropBox>().GetSlottedCharacter() == null) {
+                promising = false;
+             }
         }
         if (promising)
         {
             Transition.GetComponent<Animation>().Play("MissionStart");
-            WaitForAnim();
+            StartCoroutine(WaitForAnim());
         }
     }
     IEnumerator WaitForAnim()
     {
-        yield return new WaitForSeconds(1);
-        SceneManager.LoadScene(2);
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

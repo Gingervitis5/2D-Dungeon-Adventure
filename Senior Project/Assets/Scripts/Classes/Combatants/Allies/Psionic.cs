@@ -5,44 +5,38 @@ using UnityEngine;
 public class Psionic : Ally
 {
     public Sprite sprite;
+    protected string skillOneType = "EnemyAttack";
+    protected string skillTwoType = "";
+    protected string skillThreeType = "";
+    protected string skillFourType = "EnemyAttack";
 
-    /*public Wildlander(int health,     // Don't believe we need this constructor
-                      int healthMax,
-                      int shield,
-                      int shieldMax,
-                      int initiative,
-                      int brawn,
-                      int agility,
-                      int luck,
-                      int reason,
-                      int wit,
-                      int glamour,
-                      double aim,
-                      double critChance,
-                      double critMultiplier,
-                      double dodge,
-                      int level,
-                      int exp,
-                      int nextExp)
+    public double SkillOne()//Does this deal damage?
     {
-        Health = health;
-        HealthMax = healthMax;
-        Shield = shield;
-        ShieldMax = shieldMax;
-        Initiative = initiative;
-        Brawn = brawn;
-        Agility = agility;
-        Luck = luck;
-        Reason = reason;
-        Wit = wit;
-        Glamour = glamour;
-        Aim = aim;
-        CritChance = critChance;
-        CritMultiplier = critMultiplier;
-        Dodge = dodge;
-        Level = level;
-        EXP = exp;
-        NextEXP = nextExp;
-    }*/
+        //Apply debuff to a random enemy stat
+        return 35;
+    }
+    public void SkillTwo()
+    {
+
+    }
+    public void SkillThree()
+    {
+
+    }
+    public double SkillFour()
+    {
+        //Applies a stun debuff to enemies.
+        return 100;
+    }
+
+    public string getSkillOneType() { return this.skillOneType; }
+    public string getSkillTwoType() { return this.skillTwoType; }
+    public string getSkillThreeType() { return this.skillThreeType; }
+    public string getSkillFourType() { return this.skillFourType; }
+
+    public void setSkillOneType(string s) { this.skillOneType = s; }
+    public void setSkillTwoType(string s) { this.skillTwoType = s; }
+    public void setSkillThreeType(string s) { this.skillThreeType = s; }
+    public void setSkillFourType(string s) { this.skillFourType = s; }
 
 }

@@ -10,6 +10,7 @@ public class InventoryMasterScript : MonoBehaviour  // Attached to InventoryMast
 
     private void Awake()
     {
+        DontDestroyOnLoad(gameObject);
         CreditsText.text = NumCredits.ToString();
     }
 

@@ -23,7 +23,7 @@ public class EnemyFactory : MonoBehaviour
         NewLegionaire.characterName = "Legionaire"; //Imperial Legionaire might be a good name
         return NewLegionaire;
     }
-    /*public Warmonger CreateWarmonger()
+    public Warmonger CreateWarmonger()
     {
         Warmonger NewWarmonger = ScriptableObject.CreateInstance<Warmonger>();
         NewWarmonger.SetHealth(100);
@@ -39,6 +39,6 @@ public class EnemyFactory : MonoBehaviour
         NewWarmonger.SetGlamour(10);
         NewWarmonger.characterName = "Warmonger"; 
         return NewWarmonger;
-    }*/
+    }
 
 }

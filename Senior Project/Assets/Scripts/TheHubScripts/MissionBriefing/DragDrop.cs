@@ -42,10 +42,11 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
             if (r.gameObject.name.Contains("DropBox")) 
             {
                 if (slot != null) {
-                    Debug.Log("Leaving " + slot.gameObject.name);
-                    slot.GetComponent<DropBox>().SetSlottedCharacter(null); //Reset the current slot's character
+                    Debug.Log(gameObject.name + " leaving " + slot.gameObject.name);
+                    //slot.GetComponent<DropBox>().SetSlottedCharacter(null); //Reset the current slot's character
+                    slot = null;
                 }
-                Debug.Log("Entering " + r.gameObject.name);
+                Debug.Log(gameObject.name + " entering " + r.gameObject.name);
                 slot = r.gameObject;    //Set the new slot
                 slot.gameObject.GetComponent<DropBox>().SetSlottedCharacter(this.gameObject);   //Set the current slot's character
                 hit = true;
@@ -55,6 +56,8 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
         if (!hit) {
             ListContent = GameObject.Find("PartyContent");
             this.gameObject.transform.SetParent(ListContent.transform);
+            if (slot != null) { slot.GetComponent<DropBox>().SetSlottedCharacter(null); } //Reset the current slot's character
+            slot = null;
             PartyMasterScript.RemovePartyMember(GetComponent<DisplayPartyInfo>().GetCharacter());
         }
         canvasGroup.blocksRaycasts = true;

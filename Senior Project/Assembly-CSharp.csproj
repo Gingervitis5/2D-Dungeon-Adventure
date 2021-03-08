@@ -117,7 +117,7 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
      <Compile Include="Assets\Scripts\Classes\Combatants\Allies\Scholar.cs" />
-     <Compile Include="Assets\Scripts\Classes\Combatants\Enemies\Legionaire.cs" />
+     <Compile Include="Assets\Scripts\Classes\Combatants\Enemies\Empire\Legionaire.cs" />
      <Compile Include="Assets\Scripts\TheHubScripts\CollisionDetector.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
      <Compile Include="Assets\Scripts\TheHubScripts\Armaments\DisplayCharacterInfo.cs" />
@@ -132,6 +132,7 @@
      <Compile Include="Assets\Scripts\TheHubScripts\MissionBriefing\MissionHighlight.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
      <Compile Include="Assets\StartMission.cs" />
+     <Compile Include="Assets\DDOLManager.cs" />
      <Compile Include="Assets\Scripts\Classes\Combatants\Allies\Delegate.cs" />
      <Compile Include="Assets\Scripts\TheHubScripts\BlackMarket\BlackMarketContextSwitcher.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
@@ -147,6 +148,19 @@
      <Compile Include="Assets\Scripts\TheHubScripts\Armaments\GenerateCharacterInfo.cs" />
      <Compile Include="Assets\Scripts\Classes\Combatants\Allies\Wildlander.cs" />
      <Compile Include="Assets\Scripts\InventoryMasterScript.cs" />
+     <Compile Include="Assets\Scripts\BattleMenuScripts\Spawner.cs" />
+     <Compile Include="Assets\Scripts\BattleMenuScripts\BattleMenu.cs" />
+     <Compile Include="Assets\Scripts\Classes\Combatants\CharacterLevelupFactory.cs" />
+     <Compile Include="Assets\Scripts\Classes\Combatants\Enemies\Empire\Warmonger.cs" />
+     <Compile Include="Assets\Scripts\Combat\StatusEffect\LuckBuff.cs" />
+     <Compile Include="Assets\Scripts\Combat\StatusEffect\BrawnBuff.cs" />
+     <Compile Include="Assets\Scripts\Combat\StatusEffect\StatBuff.cs" />
+     <Compile Include="Assets\Scripts\Combat\StatusEffect\GlamourBuff.cs" />
+     <Compile Include="Assets\Scripts\Combat\StatusEffect\StatusEffect.cs" />
+     <Compile Include="Assets\Scripts\Combat\StatusEffect\AgilityBuff.cs" />
+     <Compile Include="Assets\Scripts\Combat\StatusEffect\ReasonBuff.cs" />
+     <Compile Include="Assets\Scripts\Combat\StatusEffect\WitBuff.cs" />
+     <Compile Include="Assets\Scripts\Combat\CombatController.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

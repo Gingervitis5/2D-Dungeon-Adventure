@@ -5,44 +5,36 @@ using UnityEngine;
 public class Wildlander : Ally
 {
     public Sprite sprite;
+    protected string skillOneType = "";
+    protected string skillTwoType = "";
+    protected string skillThreeType = "";
+    protected string skillFourType = "";
 
-    /*public Wildlander(int health,     // Don't believe we need this constructor
-                      int healthMax,
-                      int shield,
-                      int shieldMax,
-                      int initiative,
-                      int brawn,
-                      int agility,
-                      int luck,
-                      int reason,
-                      int wit,
-                      int glamour,
-                      double aim,
-                      double critChance,
-                      double critMultiplier,
-                      double dodge,
-                      int level,
-                      int exp,
-                      int nextExp)
+    public void SkillOne()
     {
-        Health = health;
-        HealthMax = healthMax;
-        Shield = shield;
-        ShieldMax = shieldMax;
-        Initiative = initiative;
-        Brawn = brawn;
-        Agility = agility;
-        Luck = luck;
-        Reason = reason;
-        Wit = wit;
-        Glamour = glamour;
-        Aim = aim;
-        CritChance = critChance;
-        CritMultiplier = critMultiplier;
-        Dodge = dodge;
-        Level = level;
-        EXP = exp;
-        NextEXP = nextExp;
-    }*/
+
+    }
+    public void SkillTwo()
+    {
+
+    }
+    public void SkillThree()
+    {
+
+    }
+    public void SkillFour()
+    {
+
+    }
+
+    public string GetSkillOneType() { return this.skillOneType; }
+    public string GetSkillTwoType() { return this.skillTwoType; }
+    public string GetSkillThreeType() { return this.skillThreeType; }
+    public string GetSkillFourType() { return this.skillFourType; }
+
+    public void SetSkillOneType(string s) { this.skillOneType = s; }
+    public void SetSkillTwoType(string s) { this.skillTwoType = s; }
+    public void SetSkillThreeType(string s) { this.skillThreeType = s; }
+    public void SetSkillFourType(string s) { this.skillFourType = s; }
 
 }

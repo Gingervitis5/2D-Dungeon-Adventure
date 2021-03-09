@@ -5,7 +5,7 @@ using UnityEngine;
 public class PartyMasterScript : MonoBehaviour
 {
     private List<Ally> Characters = new List<Ally>();
-    private static List<Ally> Party = new List<Ally>();
+    public static List<Ally> Party = new List<Ally>();
     public GameObject RecruitListContent, PartyListContent;
     public GameObject[] RecruitPrefabs;
     public GameObject[] DraggablePrefabs;
@@ -19,6 +19,7 @@ public class PartyMasterScript : MonoBehaviour
     {
         return Party;
     }
+
 
     public static void AddPartyMember(Ally ally)
     {

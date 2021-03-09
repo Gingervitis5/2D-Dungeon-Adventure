@@ -10,15 +10,11 @@ public class DropBox : MonoBehaviour, IDropHandler
 
     public void OnDrop(PointerEventData eventData)
     {
-        Debug.Log("Messing with " + this.gameObject.name);
         if (eventData.pointerDrag != null)
         {
             if (slottedCharacter != null && slottedCharacter != eventData.pointerDrag) {
                 slottedCharacter.transform.SetParent(ListContent.transform);
-                if (PartyMasterScript.GetParty().Contains(slottedCharacter.GetComponent<DisplayPartyInfo>().GetCharacter()))
-                {
-                    PartyMasterScript.RemovePartyMember(slottedCharacter.GetComponent<DisplayPartyInfo>().GetCharacter());
-                }
+                slottedCharacter.GetComponent<DragDrop>().SetSlot(null);
                 slottedCharacter = null; 
             }
             eventData.pointerDrag.GetComponent<RectTransform>().SetParent(this.transform);

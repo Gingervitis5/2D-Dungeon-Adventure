@@ -15,10 +15,14 @@ public class StartMission : MonoBehaviour
         {
             if (g.GetComponent<DropBox>().GetSlottedCharacter() == null) {
                 promising = false;
-             }
+            }
         }
         if (promising)
         {
+            foreach (GameObject g in DropBoxes)
+            {
+                PartyMasterScript.AddPartyMember(g.GetComponent<DropBox>().GetSlottedCharacter().GetComponent<DisplayPartyInfo>().GetCharacter());
+            }
             Transition.GetComponent<Animation>().Play("MissionStart");
             StartCoroutine(WaitForAnim());
         }

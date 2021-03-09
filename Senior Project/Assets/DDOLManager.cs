@@ -14,8 +14,5 @@ public class DDOLManager : MonoBehaviour
         {
             PartyMembers[i].sprite = allies[i].characterImage;
         }
-        {
-
-        }
     }
 }

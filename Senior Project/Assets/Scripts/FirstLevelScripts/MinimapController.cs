@@ -5,29 +5,26 @@ using UnityEngine;
 
 public class MinimapController : MonoBehaviour
 {
-    //public Room [,] allRooms;
+    
     public GameObject[,] minimap;
     public Sprite unfocusedRoom;
     public Sprite focusedRoom;
+    public Sprite prevRoom;
     // Start is called before the first frame update
     void Start()
     {
         
     }
-
-    // Update is called once per frame
-    void Update()
+  
+    public void updateMinimap(Point from, Point to, Sprite prevMiniSprite)
     {
-        
-    }
-
-    public void updateMinimap(Point from, Point to)
-    {
-        minimap[from.X, from.Y].GetComponent<SpriteRenderer>().sprite = unfocusedRoom;
+        minimap[from.X, from.Y].GetComponent<SpriteRenderer>().sprite = prevMiniSprite;
         minimap[to.X, to.Y].GetComponent<SpriteRenderer>().sprite = focusedRoom;
     }
     private void Awake()
     {
-        minimap[0, 0].GetComponent<SpriteRenderer>().sprite = focusedRoom;
+        minimap[3, 0].GetComponent<SpriteRenderer>().sprite = focusedRoom;
     }
+
+   
 }

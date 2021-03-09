@@ -7,11 +7,18 @@ public class Room
 {
     private bool blocked = true;
     private Sprite roomImage;
+    private int north,east,south,west;
+    private int numberOfDoors;
 
-    public Room(Sprite backgroundPar)
+    public Room(Sprite backgroundPar, int n, int e, int s, int w, int numOfDoors)
     {
         roomImage = backgroundPar;
         blocked = false;
+        this.north = n;
+        this.east = e;
+        this.south = s;
+        this.west = w;
+        this.numberOfDoors = numOfDoors;
     }
     public Room()
     {
@@ -21,6 +28,7 @@ public class Room
     {
         this.roomImage = background;
         this.blocked = false;
+        
     }
     public Sprite getBackground()
     {
@@ -30,5 +38,16 @@ public class Room
     public bool isBlocked()
     {
         return this.blocked;
+    }
+
+    public int [] getDoors()
+    {
+        int[] doors = { north, east, south, west };
+        return doors;
+    }
+
+    public int getNumberOfDoors()
+    {
+        return numberOfDoors;
     }
 }
